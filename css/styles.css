@@ -300,7 +300,7 @@ body.light-theme{
   font-size: var(--biggest-font-size);
 }
 .home__img{
-  width: 160px;
+  width: 300px;
 }
 .home__handle{
   justify-self: center;
@@ -816,7 +816,7 @@ body.light-theme{
     height: 253px;
   }
   .home__img{
-    width: 130px;
+    width: 300px;
   }
   .about__info{
     grid-template-columns: repeat(2, 1fr);
@@ -922,7 +922,7 @@ body.light-theme{
     height: 400px;
   }
   .home__img{
-    width: 220px;
+    width: 300px;
   }
   .home__social-link{
     padding: 0.4rem;
