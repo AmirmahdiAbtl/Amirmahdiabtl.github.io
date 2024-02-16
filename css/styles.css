@@ -408,6 +408,7 @@ body.light-theme{
   background-color: var(--container-color);
   border-radius: 0.75rem;
   padding: 0.75rem 0.5rem;
+  width: 100%;
 }
 .about__icon{
   font-size: 1.5rem;
@@ -471,11 +472,11 @@ body.light-theme{
 .services__container{
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  padding-top: 1rem;
+  padding-top: 0;
 }
 .services__card{
   background-color: var(--container-color);
-  padding: 3rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
   border-radius: 1rem;
 }
 .services__title{
@@ -520,6 +521,9 @@ body.light-theme{
 .services__modal-description{
   text-align: center;
 }
+.services__modal-description a{
+  color: var(--first-color);
+}
 .services__modal-title{
   font-size: var(--h3-font-size);
   color: var(--first-color);
@@ -537,6 +541,9 @@ body.light-theme{
   display: flex;
   align-items: flex-start;
   column-gap: 0.5rem;
+}
+.services__modal-item a{
+  color: var(--first-color);;
 }
 .services__modal-icon{
   font-size: 1.5rem;
@@ -627,8 +634,7 @@ body.light-theme{
   height: 250px;
 }
 .testimonial__img{
-  width: 60px;
-  border-radius: 3rem;
+  width: 75%;
   margin-bottom: 1rem;
 }
 .testimonial__name{
@@ -855,7 +861,7 @@ body.light-theme{
     padding: 2rem 4rem;
   }
   .services__container{
-    grid-template-columns: repeat(2, 160px);
+    grid-template-columns: repeat(2, 260px);
     justify-content: center;
   }
   .services__modal-content{
@@ -958,11 +964,11 @@ body.light-theme{
     column-gap: 3rem;
   }
   .services__container{
-    grid-template-columns: repeat(3, 192px);
+    grid-template-columns: repeat(3, 256px);
     column-gap: 3rem;
   }
   .services__card{
-    padding: 5rem 2rem 1.5rem;
+    /* padding: 5rem 2rem 1.5rem; */
   }
   .work__container{
     gap: 3rem;
@@ -1065,4 +1071,10 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+.pop_up_btn{
+  padding: 0;
+  background-color: transparent;
+   color : var(--first-color);
+   font-size: 14px;
 }

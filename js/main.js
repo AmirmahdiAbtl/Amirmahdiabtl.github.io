@@ -136,10 +136,58 @@ sr.reveal(".home__handle", {delay: 700})
 sr.reveal(".home__social .home__scroll", {delay: 900, origin: "bottom"})
 
 
-function openPopup() {
-    document.getElementById("popup").style.display = "block";
+function openPopup_ml() {
+    document.getElementById("popup_ml").style.display = "block";
+}
+function closePopup_ml() {
+    document.getElementById("popup_ml").style.display = "none";
 }
 
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
+function openPopup_dl() {
+    document.getElementById("popup_dl").style.display = "block";
+}
+function closePopup_dl() {
+    document.getElementById("popup_dl").style.display = "none";
+}
+
+function openPopup_gan() {
+    document.getElementById("popup_gan").style.display = "block";
+}
+function closePopup_gan() {
+    document.getElementById("popup_gan").style.display = "none";
+}
+
+function openPopup_nlp() {
+    document.getElementById("popup_nlp").style.display = "block";
+}
+function closePopup_nlp() {
+    document.getElementById("popup_nlp").style.display = "none";
+}
+
+function openPopup_ds() {
+    document.getElementById("popup_ds").style.display = "block";
+}
+function closePopup_ds() {
+    document.getElementById("popup_ds").style.display = "none";
+}
+
+function openPopup_kaggle() {
+    document.getElementById("popup_kaggle").style.display = "block";
+}
+function closePopup_kaggle() {
+    document.getElementById("popup_kaggle").style.display = "none";
+}
+
+function openPopup_coursera() {
+    document.getElementById("popup_coursera").style.display = "block";
+}
+function closePopup_coursera() {
+    document.getElementById("popup_coursera").style.display = "none";
+}
+
+function openPopup_uni() {
+    document.getElementById("popup_uni").style.display = "block";
+}
+function closePopup_uni() {
+    document.getElementById("popup_uni").style.display = "none";
 }
