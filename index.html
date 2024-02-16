@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="{% url "index" %}" class="nav__logo">Amirmahdi</a>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user' ></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book' ></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bx-briefcase' ></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-detail'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Change Theme Color -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Amirmahdi Abootalebi</h1>
+                        <h3 class="home__education">Data Scientist & Back-end Developer</h3>
+    
+                        <div class="home__buttons">
+                            <a download="" href="/cv/pdf/Ansel-Cv.pdf" class="button button--ghost">
+                                Download CV
+                            </a>
+                            <a href="#about" class="button">About Me</a>
+                        </div>
+                    </div>
+                    <div class="home__handle">
+                        <img src="img/perfil.png" alt="" class="home__img">
+                    </div>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/amirmahdi-abootalebi/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                        <a href="https://github.com/AmirmahdiAbtl/AmirmahdiAbtl" target="_blank" class="home__social-link">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                        <a href="https://www.instagram.com/amirmahdi_abtl/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </div>
+    
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-mouse home__scroll-icon'></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle">My Intro</span>
+                <h2 class="section__title">About Me</h2>
+                <div class="about__container container grid">
+                    <img src="img/about.jpg"alt="" class="about__img">
+    
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class='bx bx-award about__icon' ></i>
+                                <h3 class="about__title">Education</h3>
+                                <span class="about__subtitle">Amirkabir University<br>Computer Science</span>
+                            </div>
+                            <div class="about__box">
+                                <i class='bx bx-briefcase-alt about__icon' ></i>
+                                <h3 class="about__title">Experience</h3>
+                                <span class="about__subtitle">7 months</span>
+                            </div>
+                            <div class="about__box">
+                                <i class='bx bx-support about__icon' ></i>
+                                <h3 class="about__title">TOEFL</h3>
+                                <span class="about__subtitle">Score : 89</span>
+                            </div>  
+                        </div>
+                        <p class="about__description" style="text-align: justify;">
+                            Full Stack web developer and Data Science developer, I created so many web project in conjuction with some rudimentary data science project
+                            I want to apply for educational and job offers
+                        </p>
+                        <a href="#contact" class="button">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+    
+            <!--=============== SKILLS ===============-->
+            <section class="skills section" id="skills">
+                <span class="section__subtitle">My abilities</span>
+                <h2 class="section__title">My Eperience</h2>
+    
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <h3 class="skills__title">Web Developing</h3>
+    
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">JS</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Laravel</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">REST</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__content">
+                        <h3 class="skills__title">Data Science</h3>
+    
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Tensorflow</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Scikit Learn</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Pandas</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Numpy</h3>
+                                        <span class="skills__level">Intermadiate</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check' ></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Matplotlib</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!--=============== SERVICES ===============-->
+            <section class="services section">
+                <span class="section__subtitle">My Services</span>
+                <h2 class="section__title">What I offer</h2>
+    
+                <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__title">Front-end <br> Developer</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Front-end Developer</h3>
+                                <p class="services__modal-description">
+                                    I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Designing some landing pages</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Creating jS, Jquery plugin</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Using Laravel Api for React Website</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Back-end <br> Developer</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Back-end Developer</h3>
+                                <p class="services__modal-description">
+                                    I've started Back-end developing with PHP and Laravel framework in intership but after a while I prefer to start Django because of Python
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Blog and Todo List with Laravel<br> <a href="">Github Link<i class='bx bx-right-arrow-alt services__icon' ></i></a> </p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">I created full streaming website with Laravel<br> <a href="">Github Link<i class='bx bx-right-arrow-alt services__icon' ></i></a></p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Blog WebSite with Django</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Personal Website with Django</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Data <br> Science</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Deep Learning and Machine Learning Developer</h3>
+                                <p class="services__modal-description">
+                                    Artificial Intelligence is one of the most interesting fields in my major so I made an effort to learn and apply this highly controversial topic in my projects
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Using Pandas and matplotlib for cleaning and visualizing data</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Using Machine learning (supervise, unsupervise) methods (Regression, Clustering, Classification)</p>
+                                        
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Using Deeplearning Method (Logestic Regression,...) and trying to learn more about the statestics that exist behind them</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">RNN, CNN, SignalProcessing</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+                <span class="section__subtitle">My Portfolio</span>
+                <h2 class="section__title">Recent Works</h2>
+    
+                <div class="work__filters">
+                    <span class="work__item mixitup-control-active active-work" data-filter="all">All</span>
+                    
+                        <span class="work__item" data-filter=".web">BI</span>
+                    
+                        <span class="work__item" data-filter=".ml">Machine Learning</span>
+                    
+                        <span class="work__item" data-filter=".dl">Deep Learning</span>
+                    
+                </div>
+    
+                <div class="work__container container grid" id="MixItUp41FB2B" style="">
+                    
+                        <div class="work__card mix web" style="">
+                            <img src="/posters/poster/Screenshot_2023-03-05_160053.png" alt="" class="work__img">
+                            <h3 class="work__title">Blog - Laravel</h3>
+                            <a href="https://github.com/AmirmahdiAbtl/larablog" class="work__button">
+                                Github <i class="bx bx-right-arrow-alt work__icon"></i>
+                            </a>
+                        </div>
+                    
+                        <div class="work__card mix dl" style="">
+                            <img src="/posters/poster/Screenshot_20221025_074130.png" alt="" class="work__img">
+                            <h3 class="work__title">Data Clearning</h3>
+                            <a href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                                Colab <i class="bx bx-right-arrow-alt work__icon"></i>
+                            </a>
+                        </div>
+                    
+                </div>
+                <div class="work__button-more">
+                    <a href="/postexplorer/"><button class="button">More Projects</button></a>
+                </div>
+            </section>
+            
+            <!--=============== TESTIMONIALS ===============-->
+            <section class="services testimonial section" id="testimonial">
+                <span class="section__subtitle">Some Of My Extra</span>
+                <h2 class="section__title">Course Certification</h2>
+            
+                <div class="testimonial__container containcer swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                    <div class="swiper-wrapper" id="swiper-wrapper-b55b035ac332435a" aria-live="polite" style="cursor: grab; transition-duration: 0ms; transform: translate3d(-729.5px, 0px, 0px);">
+                        <div class="testimonial__card swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 2" style="width: 340.75px; margin-right: 24px;">
+                            <img src="img/deep.png" alt="" class="testimonial__img">
+                            <h3 class="testimonial__name">Machine Learning Specialization</h3>
+                            <p class="testimonial__description">Coursera - Mar 2022</p>
+                            <button onclick="openPopup()">Open Pop-up</button>
+                        </div>
+                        
+                        <div class="testimonial__card swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 340.75px; margin-right: 24px;">
+                            <a href="https://google.com" class="testimonial__link">
+                                <img src="https://media.licdn.com/dms/image/C560BAQEHKffoI8RwIQ/company-logo_100_100/0/1612806383093?e=1688601600&amp;v=beta&amp;t=YnwWzF2qZbdXs7TCxW0_y_Bzrh_HRsYJ4YToyhcmScg" alt="" class="testimonial__img">
+                                <h3 class="testimonial__name">Deep Learning Specialization</h3>
+                                <p class="testimonial__description" style="color: white">
+                                    Coursera (Deeplearning.ai) - May 2022
+                                </p>
+                            </a>
+                        </div>
+                        <div class="testimonial__card swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 340.75px; margin-right: 24px;">
+                            <a href="https://google.com" class="testimonial__link">
+                                <img src="https://media.licdn.com/dms/image/C560BAQEHKffoI8RwIQ/company-logo_100_100/0/1612806383093?e=1688601600&amp;v=beta&amp;t=YnwWzF2qZbdXs7TCxW0_y_Bzrh_HRsYJ4YToyhcmScg" alt="" class="testimonial__img">
+                                <h3 class="testimonial__name">GAN's Specialization</h3>
+                                <p class="testimonial__description" style="color: white">
+                                    Coursera (Deeplearning.ai) - May 2022
+                                </p>
+                            </a>
+                        </div>
+                        <div class="testimonial__card swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 340.75px; margin-right: 24px;">
+                            <a href="https://google.com" class="testimonial__link">
+                                <img src="https://media.licdn.com/dms/image/C560BAQEHKffoI8RwIQ/company-logo_100_100/0/1612806383093?e=1688601600&amp;v=beta&amp;t=YnwWzF2qZbdXs7TCxW0_y_Bzrh_HRsYJ4YToyhcmScg" alt="" class="testimonial__img">
+                                <h3 class="testimonial__name">Data Science Specialization</h3>
+                                <p class="testimonial__description" style="color: white">
+                                    Coursera (Deeplearning.ai) - May 2022
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </section>
+            <div class="popup-overlay" id="popup">
+                <div class="services__modal-content popup-content" id="popup">
+                    <span class="close-btn services__modal-close" onclick="closePopup()">&times;</span>
+                    <h3 class="services__modal-title">Front-end Developer</h3>
+                    <p class="services__modal-description">
+                        I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
+                    </p>
+                    <ul class="services__modal-list">
+                        <li class="services__modal-item">
+                            <i class="bx bx-check services__modal-icon"></i>
+                            <p class="services__modal-info">Designing some landing pages</p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class="bx bx-check services__modal-icon"></i>
+                            <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class="bx bx-check services__modal-icon"></i>
+                            <p class="services__modal-info">Creating jS, Jquery plugin</p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class="bx bx-check services__modal-icon"></i>
+                            <p class="services__modal-info">Using Laravel Api for React Website</p>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title">Contact Me</h2>
+    
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to me</h3>
+    
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon' ></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">Amir.abootalebi2001@gmail.com</span>
+                                <a href="mailto:amir.abootalebi2001@gmail.com" target="_blank" class="contact__button">
+                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+                            <div class="contact__card">
+                                <i class='bx bxl-whatsapp contact__card-icon' ></i>
+                                <h3 class="contact__card-title">whatsapp</h3>
+                                <span class="contact__card-data">+98935-334-5705</span>
+                                <a href="https://wa.me/989353345705" target="_blank" class="contact__button">
+                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+                            <div class="contact__card">
+                                <i class='bx bxl-telegram'></i>
+                                <h3 class="contact__card-title">Telegram</h3>
+                                <span class="contact__card-data">@AmirmahdiAbtl</span>
+                                <a href="https://t.me/AmirmahdiAbtl" target="_blank" class="contact__button">
+                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="contact__content">
+                        <h3 class="contact__title">Write me your project</h3>
+    
+                        <form method="POST" action="" class="contact__form">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="XbU2FfL0x7AHVGrwt2OSvrGv0BiBdCuA7rWt95BRv5iSwbyyFSrub3TtfWxp3UqL">
+                            <div class="contact__form-div">
+                                <label for="id_name">Names:</label>
+                                <input type="text" name="name" maxlength="50" required="" id="id_name">
+                                
+                            </div>
+                            <div class="contact__form-div">
+                                <label for="id_email">Mail:</label>
+                                <input type="email" name="email" maxlength="254" required="" id="id_email">
+                                
+                            </div>
+                            <div class="contact__form-div contact__form-area">
+                                <label for="id_detail">Detail:</label>
+                                <textarea name="detail" cols="40" rows="10" maxlength="500" required="" id="id_detail"></textarea>
+                                
+                            </div>
+                            <button type="submit" class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Amirmahdi</h1>
+        
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer__link">Work</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="footer__link">Certification</a>
+                    </li>
+                </ul>
+        
+                <ul class="footer__social">
+                    <a href="https://t.me/AmirmahdiAbtl" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-telegram'></i>
+                    </a>
+                    <a href="https://www.instagram.com/amirmahdi_abtl/" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/989353345705" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                </ul>
+        
+                <span class="footer__copy">
+                    &#169; AmirmahdiABTL. All rights reserved
+                </span>
+            </div>
+        </footer>
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
