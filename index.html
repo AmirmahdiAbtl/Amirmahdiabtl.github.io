@@ -82,7 +82,7 @@
                         <img src="img/IMG_9792 (2).png" alt="" class="home__img">
                     </div>
                     <div class="home__social">
-                        <a  href="https://www.instagram.com/amirmahdi_abtl/" target="_blank" class="home__social-link">
+                        <a  href="https://www.kaggle.com/amirmahdiabbootalebi" target="_blank" class="home__social-link">
                             <i style="width: 100%;" class="fa-brands fa-kaggle"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/amirmahdi-abootalebi/" target="_blank" class="home__social-link">
@@ -521,26 +521,28 @@
                         </a>
                     </div>
                     
-                    <div id="workCard2" class="work__card mix ds">
+                    <div id="workCard2" class="work__card mix ml">
                         <img id="workImg2" class="work__img" src="poster/mlp11.webp" alt="">
                         <h3 class="work__title">Model Training, EDA, Tableau<br> Scratch Implementation </h3>
+                        <p>Salary Prediction (Regression)</p>
                         <div>
-                        <a style="display: inline;" href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                        <a style="display: inline;" href="https://github.com/AmirmahdiAbtl/Machine-Learning-Salary-Data-Based-on-Country/" class="work__button">
                             GitHub <i class="bx bx-right-arrow-alt work__icon"></i>
                         </a>
-                        <a style="display: inline; padding: 0 0.5rem;" href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                        <a style="display: inline; padding: 0 0.5rem;" href="https://colab.research.google.com/drive/1mVqH1VBxk9l5MzJLjwQ8m6CwF6QqRHXf?usp=sharing" class="work__button">
                             Colab <i class="bx bx-right-arrow-alt work__icon"></i>
                         </a>
-                        <a style="display: inline;" href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                        <a style="display: inline;" href="https://www.kaggle.com/code/amirmahdiabbootalebi/with-this-notebook-you-don-t-need-any-courses" class="work__button">
                             Kaggle <i class="bx bx-right-arrow-alt work__icon"></i>
                         </a>
                         </div>
                     </div>
-                    <div id="workCard3" class="work__card mix dl">
-                        <img id="workImg3" class="work__img" src="poster/Screenshot_2023-03-05_160053.png" alt="">
-                        <h3 class="work__title">Data Clearning</h3>
-                        <a href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
-                            Colab <i class="bx bx-right-arrow-alt work__icon"></i>
+                    <div class="work__card mix ds">
+                        <img style="height: 200px; width: 100%;" class="work__img" src="poster/socerdb.webp" alt="">
+                        <h3 class="work__title">NoSQL Prject</h3>
+                        <p>MongoDB & Neo4j <br>(creating, querying, E-D diagrams)</p>
+                        <a href="https://github.com/AmirmahdiAbtl/NoSQL-Project-MongoDB-Neo4j-/" class="work__button">
+                            GitHub <i class="bx bx-right-arrow-alt work__icon"></i>
                         </a>
                     </div>  
                     
@@ -1039,7 +1041,7 @@
                         interval = setInterval(() => {
                             img.src = images[currentIndex];
                             currentIndex = (currentIndex + 1) % images.length;
-                        }, 2000); // Change image every 1000ms (1 second)
+                        }, 1000); // Change image every 1000ms (1 second)
                     });
             
                     document.getElementById(cardId).addEventListener('mouseleave', function() {
