@@ -6,7 +6,8 @@
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -15,13 +16,13 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <title>AmirmahdiAbtl</title>
+    <title>Amirmahdi</title>
     <body>
         <!--=============== HEADER ===============-->
         
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="{% url "index" %}" class="nav__logo">Amirmahdi</a>
+                <a href="" class="nav__logo">Amirmahdi</a>
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav_item">
@@ -32,6 +33,11 @@
                         <li class="nav_item">
                             <a href="#about" class="nav__link">
                                 <i class='bx bx-user' ></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#experience" class="nav__link">
+                                <i class="fa-solid fa-briefcase"></i>
                             </a>
                         </li>
                         <li class="nav_item">
@@ -62,11 +68,11 @@
                 <div class="home__container container grid">
                     <div class="home__data">
                         <span class="home__greeting">Hello, I'm</span>
-                        <h1 class="home__name">Amirmahdi Abootalebi</h1>
-                        <h3 class="home__education">Data Scientist & Back-end Developer</h3>
+                        <h1 class="home__name">Amirmahdi Aboutalebi</h1>
+                        <h3 class="home__education">Data Scientist & Machine Learning Developer</h3>
     
                         <div class="home__buttons">
-                            <a download="" href="/cv/pdf/Ansel-Cv.pdf" class="button button--ghost">
+                            <a download="" href="Amirmahdi CV.pdf" class="button button--ghost">
                                 Download CV
                             </a>
                             <a href="#about" class="button">About Me</a>
@@ -76,15 +82,16 @@
                         <img src="img/IMG_9792 (2).png" alt="" class="home__img">
                     </div>
                     <div class="home__social">
+                        <a  href="https://www.instagram.com/amirmahdi_abtl/" target="_blank" class="home__social-link">
+                            <i style="width: 100%;" class="fa-brands fa-kaggle"></i>
+                        </a>
                         <a href="https://www.linkedin.com/in/amirmahdi-abootalebi/" target="_blank" class="home__social-link">
                             <i class='bx bxl-linkedin' ></i>
                         </a>
                         <a href="https://github.com/AmirmahdiAbtl/AmirmahdiAbtl" target="_blank" class="home__social-link">
                             <i class='bx bxl-github' ></i>
                         </a>
-                        <a href="https://www.instagram.com/amirmahdi_abtl/" target="_blank" class="home__social-link">
-                            <i class='bx bxl-instagram' ></i>
-                        </a>
+                        
                     </div>
     
                     <a href="#about" class="home__scroll">
@@ -104,156 +111,140 @@
                     <div class="about__data">
                         <div class="about__info">
                             <div class="about__box">
-                                <i class='bx bx-award about__icon' ></i>
-                                <h3 class="about__title">Education</h3>
-                                <span class="about__subtitle">Amirkabir University<br>Computer Science</span>
+                                <i class="fa-solid fa-user-graduate about__icon"></i>
+                                <h3 class="about__title">Bachelor<br> Degree</h3>
+                                <span class="about__subtitle">Amirkabir University<br>Computer Science (3.5/4)</span>
                             </div>
                             <div class="about__box">
-                                <i class='bx bx-briefcase-alt about__icon' ></i>
-                                <h3 class="about__title">Experience</h3>
-                                <span class="about__subtitle">7 months</span>
-                            </div>
-                            <div class="about__box">
-                                <i class='bx bx-support about__icon' ></i>
-                                <h3 class="about__title">TOEFL</h3>
-                                <span class="about__subtitle">Score : 89</span>
+                                <i class="fa-solid fa-building-columns about__icon"></i>
+                                <h3 class="about__title">Master <br>Degree</h3>
+                                <span class="about__subtitle">Genova University<br>Artificial Intelligence</span>
                             </div>  
+                            <div class="about__box">
+                                <i class="fa-solid fa-language about__icon"></i>
+                                <h3 class="about__title">Languages</h3>
+                                <span class="about__subtitle">English<br>Persian</span>
+                            </div>
+                            
                         </div>
                         <p class="about__description" style="text-align: justify;">
-                            Full Stack web developer and Data Science developer, I created so many web project in conjuction with some rudimentary data science project
-                            I want to apply for educational and job offers
+                            Fuelled by an insatiable curiosity for the realms of Machine Learning, Deep Learning, and NLP, I embark on a journey where algorithms unravel the mysteries of data. From crafting intricate GANs to sculpting insights with PowerBI, I orchestrate symphonies of information, harmonizing the art of analysis with the science of visualization. Step into my world, where every line of code tells a story, and every dashboard is a gateway to discovery.
                         </p>
                         <a href="#contact" class="button">Contact Me</a>
                     </div>
                 </div>
             </section>
-    
             <!--=============== SKILLS ===============-->
-            <section class="skills section" id="skills">
-                <span class="section__subtitle">My abilities</span>
-                <h2 class="section__title">My Eperience</h2>
-    
+            <!-- <section class="experience section" id="experience">
+                <span class="section__subtitle">Experience</span>
+                <h2 class="section__title">Educational and Job Experience</h2>
+                <div class="exp__container grid container">
+                    <h3 class="skills__title">Education</h3>
+                    <ul >
+                        <li>
+                            <i class='bx bxs-badge-check' ></i>
+                            Teacher Assistant of Artificial Intelligence  <br>
+                            <span class="skills__level">Prof, Akbari Amirkabir University(2022-2023)</span>
+                        </li>
+                        <li>
+                            <i class='bx bxs-badge-check' ></i>
+                            TA1
+                        </li>
+                        <li>
+                            <i class='bx bxs-badge-check' ></i>
+                            TA1
+                        </li>
+                    </ul>
+                    <h3 class="skills__title">Job</h3>
+                    <ul>
+                        <li>
+                            <i class='bx bxs-badge-check' ></i>
+                            TA1</li>
+                        <li>TA1</li>
+                        <li>TA1</li>
+                    </ul>
+                </div>
+            </section> -->
+            <section class="experience section" id="experience">
+                <span class="section__subtitle">Experience</span>
+                <h2 class="section__title">Educational and Job Experience</h2>
                 <div class="skills__container container grid">
                     <div class="skills__content">
-                        <h3 class="skills__title">Web Developing</h3>
+                        <h3 class="skills__title">Educational</h3>
     
                         <div class="skills__box">
                             <div class="skills__group">
                                 <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                                    <i class="fa-solid fa-microchip-ai"></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Intermadiate</span>
+                                        <h3 class="skills__name">Teacher Assistant of Artificial Intelligence</h3>
+                                        <span class="skills__level">Prof, Akbari Amirkabir University(2022-2023)</span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                                    <i class="fa-duotone fa-laptop-code"></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Intermadiate</span>
+                                        <h3 class="skills__name">Teacher Assistant of Foundamental Programming</h3>
+                                        <span class="skills__level">Prof, HajiMohammadi Amirkabir University(2022-2023)</span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                                    <i class="fa-duotone fa-database"></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">JS</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check'></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Django</h3>
-                                        <span class="skills__level">Intermadiate</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Laravel</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">REST</h3>
-                                        <span class="skills__level">Basic</span>
+                                        <h3 class="skills__name">Teacher Assistant of Data Structure and Algorithm</h3>
+                                        <span class="skills__level">Prof, Salary Razi University (2022-2023)</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="skills__content">
-                        <h3 class="skills__title">Data Science</h3>
+                        <h3 class="skills__title">Machine Learning</h3>
     
                         <div class="skills__box">
                             <div class="skills__group">
                                 <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                                    <i class='bx bxl-react'></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__level">Intermadiate</span>
+                                        <h3 class="skills__name">Front-End Developer (React)</h3>
+                                        <span class="skills__level">Self-Employed (2020 - 2022)</span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                                    <i class="fa-brands fa-laravel"></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">Tensorflow</h3>
-                                        <span class="skills__level">Intermadiate</span>
+                                        <h3 class="skills__name">Back-End Internship (Laravel - PHP)</h3>
+                                        <span class="skills__level">Puzzle Studio (Mar 2021 - May 2021)</span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
+                                    <i class="fa-duotone fa-layer-group"></i>
                                     
                                     <div>
-                                        <h3 class="skills__name">Scikit Learn</h3>
-                                        <span class="skills__level">Intermadiate</span>
+                                        <h3 class="skills__name">Full-Stack Developer</h3>
+                                        <span class="skills__level">Puzzle Studio (May 2021 - Sep 2021)</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-light fa-chart-mixed"></i>
+                                    <div>
+                                        <h3 class="skills__name">Data Scientist</h3>
+                                        <span class="skills__level">Self-Employed (2022 - present)</span>
                                     </div>
                                 </div>
                             </div>
     
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check'></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Pandas</h3>
-                                        <span class="skills__level">Intermadiate</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Numpy</h3>
-                                        <span class="skills__level">Intermadiate</span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    
-                                    <div>
-                                        <h3 class="skills__name">Matplotlib</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            
     
             <!--=============== SERVICES ===============-->
             <section class="services section">
@@ -261,73 +252,46 @@
                 <h2 class="section__title">What I offer</h2>
     
                 <div class="services__container container grid">
-                    <div class="services__card">
-                        <div style="width: 100%;">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 864.67004 685.07844" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M268.97109,622.8a3.61324,3.61324,0,0,1-2.61865-6.26263c.09111-.36213.15647-.62217.24758-.9843q-.0489-.11821-.09838-.23627a9.7031,9.7031,0,0,0-17.89848.06652c-2.92739,7.05051-6.65447,14.11306-7.57217,21.56779a28.7057,28.7057,0,0,0,.50391,9.87235A115.08618,115.08618,0,0,1,231.066,599.02456a111.07965,111.07965,0,0,1,.689-12.392q.5708-5.05968,1.58377-10.04731a116.41931,116.41931,0,0,1,23.087-49.34152,30.98252,30.98252,0,0,0,12.88556-13.36892,23.63367,23.63367,0,0,0,2.14933-6.45822c-.62729.08228-1.26489.1337-1.89218.1748-.19542.01023-.40108.02054-.5965.03086l-.0737.0033a3.57989,3.57989,0,0,1-2.94009-5.83225q.40627-.5.813-.99948c.4114-.51422.833-1.01813,1.24434-1.53227a1.78518,1.78518,0,0,0,.13369-.15433c.47313-.58619.94609-1.16206,1.41921-1.74825a10.35184,10.35184,0,0,0-3.39366-3.28044c-4.74083-2.77661-11.28133-.85357-14.70586,3.43477-3.43476,4.28825-4.0826,10.30437-2.88976,15.66218a41.48513,41.48513,0,0,0,5.73842,12.793c-.25715.32911-.52454.64791-.78161.977a117.172,117.172,0,0,0-12.22973,19.37481,48.70929,48.70929,0,0,0-2.908-22.62447c-2.78347-6.71479-8.00064-12.37-12.595-18.17495-5.51857-6.9726-16.83488-3.92959-17.80713,4.90927q-.01412.12837-.02757.25666,1.02363.57749,2.004,1.22585a4.9011,4.9011,0,0,1-1.976,8.91908l-.09994.01544a48.767,48.767,0,0,0,1.28544,7.29124,50.20986,50.20986,0,0,0,24.99983,31.46836c.40108.20566.79193.41132,1.193.60674a119.59776,119.59776,0,0,0-6.43767,30.296,113.43513,113.43513,0,0,0,.08228,18.31541l-.03086-.216a29.97411,29.97411,0,0,0-10.23241-17.3076c-7.87438-6.46853-18.9994-8.8505-27.49446-14.04993a5.62528,5.62528,0,0,0-8.61571,5.47251q.01709.11352.03474.227a32.92807,32.92807,0,0,1,3.69184,1.779q1.02362.57761,2.004,1.22586a4.90115,4.90115,0,0,1-1.976,8.91916l-.1.01535c-.072.01032-.13369.02063-.20557.03095a48.80772,48.80772,0,0,0,8.97767,14.05786,50.25445,50.25445,0,0,0,36.44572,15.99129h.01032a119.5619,119.5619,0,0,0,8.03167,23.447h28.69167c.10291-.3188.19542-.64792.288-.96672a32.59875,32.59875,0,0,1-7.93916-.473c2.12878-2.61213,4.25747-5.24482,6.38625-7.85688a1.7799,1.7799,0,0,0,.1337-.15424c1.07978-1.33685,2.16987-2.66347,3.24965-4.00032l.00058-.00165A47.75037,47.75037,0,0,0,268.972,622.8006Z" transform="translate(-167.66498 -107.46078)" fill="#f2f2f2"/><path d="M607.335,648.80514a1.18647,1.18647,0,0,1-1.19006,1.19H168.855a1.19,1.19,0,0,1,0-2.38h437.29A1.18651,1.18651,0,0,1,607.335,648.80514Z" transform="translate(-167.66498 -107.46078)" fill="#ccc"/><path d="M396.64724,495.94436a11.58313,11.58313,0,0,0-14.25915,10.5897l-24.99881,8.7,1.58175,16.48119,35.13061-12.78194a11.6459,11.6459,0,0,0,2.5456-22.989Z" transform="translate(-167.66498 -107.46078)" fill="#ffb6b6"/><path d="M355.90521,543.8479c-9.94014,6.92808-27.452,10.47225-51.28551,10.30976a9.52967,9.52967,0,0,1-7.02647-3.064c-6.37724-6.64084-6.12819-21.79985-6.0884-23.26407l-6.99-26.34246c-.14985-.40284-4.01885-11.21165-.0827-18.75948a12.369,12.369,0,0,1,8.22578-6.26865c14.78244-3.92266,28.67846,35.64678,30.44432,40.87537l20.745-3.53279,14.32637-.58923,14.57563-8.0454,8.20635,19.64009-20.30842,14.84114A25.664,25.664,0,0,1,355.90521,543.8479Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><polygon points="228.268 654.202 243.549 654.916 253.575 596.315 231.022 595.261 228.268 654.202" fill="#ffb6b6"/><path d="M392.496,753.947l24.22343-.31212-.484,10.34948,22.224,16.935a6.47174,6.47174,0,0,1-4.22455,11.61271l-28.75863-1.3449-4.47824-10.469-2.41421,10.14671-10.84315-.50708Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><polygon points="387.812 528.378 393.379 514.129 341.068 485.876 314.642 502.486 387.812 528.378" fill="#ffb6b6"/><path d="M547.06718,636.62606l7.45657-23.04933,9.65027,3.77071L587.33077,601.712a6.47174,6.47174,0,0,1,9.65,7.71881L586.50288,636.2465l-11.35162.89228,8.84044,5.53451-3.95057,10.11059Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M254.96083,593.43123s6.34645,40.51574,36.34645,43.51574,57.65355-10.51574,57.65355-10.51574l84-25.87006s89.34645,25.3858,104.34645,29.3858c0,0,10.34646-23.48425,10-25-3.19036-13.95785-7.34645-4.51574-7.34645-4.51574l-95-42s-15-4-41,7S308.30728,602.947,308.30728,602.947Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M255.30728,590.947s-5.00318,48.53652,24.22042,55.95146c27.77958,7.04854,66.09816-.182,66.09816-.182l45.68142-4.76945s2,58.69551,2,87.69551a220.2581,220.2581,0,0,0,28,2c2,0,2.13267-1.04791,2.13267-1.04791l3.8727-101.44374a31.65753,31.65753,0,0,0-32.75435-33.585q-3.23463.12342-6.78643.45826c-28.10229,2.69471-62.99044-3.0339-62.99044-3.0339Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M336.36554,520.53537s11.86391,71.7439,3.84632,77.471-19.01257,5.74952-19.01257,5.74952l-2.55664-39.61253Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M316.57845,432.424l15.86267,15.07334a46.75218,46.75218,0,0,1,9.19974,55.60365l-7.58263,14.4597Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M313.03118,434.95847,334.525,459.44052a34.35461,34.35461,0,0,1,8.36232,19.19756v0a34.35478,34.35478,0,0,1-.39141,9.68345l-8.10023,44.03424L328.30728,595.947s-47.00333,14.2416-51.81437-7.74972S313.03118,434.95847,313.03118,434.95847Z" transform="translate(-167.66498 -107.46078)" fill="#61dbcf"/><path d="M292.85589,601.92344c-30.89816-5.14908-38.46709-6.17146-38.9385-6.35153l-.4723-.18021,3.097-18.58405,13.0777-32.13493c.8493-10.51166,6.35756-24.75431,3.20637-36.19425-9.16076-33.257,5.7226-80.25293,12.52893-83.85312l18.86916-12.37,6.62355,6.07267L322.33229,434.405c9.44908,42.09125,15.97518,81.32286,15.65782,83.72078l-5.832,41.20669-6.872,15.80646C304.4384,585.198,318.45716,606.18982,292.85589,601.92344Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M348.7962,571.69324l48.51412-12.97988,4.2716-1.01288,3.04581-.72337,3.54955-.83929.02836-.00653a2.01286,2.01286,0,0,1,1.507.25082l18.01367,21.59765a1.59,1.59,0,0,1,.42377.3806.71425.71425,0,0,1,.12815.13484,2.05595,2.05595,0,0,1-1.15876,3.21l-72.373,16.65523a2.03879,2.03879,0,0,1-2.04911-.72369l-.73444-.95155-4.005-19.28585-.28495-2.50426a1.99609,1.99609,0,0,1-.37549-.78762A2.02751,2.02751,0,0,1,348.7962,571.69324Z" transform="translate(-167.66498 -107.46078)" fill="#e6e6e6"/><path d="M351.96256,596.6835l.73876.95465a2.03761,2.03761,0,0,0,2.04387.72353l72.37552-16.6558a2.05225,2.05225,0,0,0,1.15648-3.20762.61137.61137,0,0,0-.12633-.13526Z" transform="translate(-167.66498 -107.46078)" opacity="0.17" style="isolation:isolate"/><path d="M407.81609,555.99683l-1.3093-92.26487a2.10556,2.10556,0,0,1,.46692-1.54178l9.2739-19.30128.96329-1.17042a2.13224,2.13224,0,0,1,1.42522-.7538l2.01855-.18813a2.10671,2.10671,0,0,1,2.30267,1.8905h0l1.81786,97.62365.00163.00711.90065,9.3997,1.06711,11.1618.00326.0142,1.66577,17.36642a2.06171,2.06171,0,0,1-.557,1.63723,2.09148,2.09148,0,0,1-1.5845.67839l-1.31342-.02644a2.13954,2.13954,0,0,1-1.36383-.53779l-.73463-.66014-.34031-.31016-14.00732-21.653A2.09359,2.09359,0,0,1,407.81609,555.99683Z" transform="translate(-167.66498 -107.46078)" fill="#e6e6e6"/><path d="M416.251,442.88882l6.26741,136.13588.34267.306.73219.65824a2.1323,2.1323,0,0,0,1.36433.53835l1.31527.02643a2.11527,2.11527,0,0,0,2.1413-2.31406L422.95483,442.67a2.1085,2.1085,0,0,0-2.29913-1.89713l-2.02255.19377a2.07831,2.07831,0,0,0-1.41837.75419Z" transform="translate(-167.66498 -107.46078)" opacity="0.17" style="isolation:isolate"/><polygon points="249.113 340.929 240.632 361.864 241.681 424.491 250.863 437.77 249.113 340.929" fill="#61dbcf"/><path d="M354.38731,571.14074a1.8207,1.8207,0,0,0-1.252,2.24889l3.73635,15.57119,3.50092-.99685-3.73636-15.5712A1.8207,1.8207,0,0,0,354.38731,571.14074Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M361.38914,569.147a1.82069,1.82069,0,0,0-1.252,2.24888l.79748,2.80074,3.50092-.99686-.79749-2.80073A1.82068,1.82068,0,0,0,361.38914,569.147Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M368.391,567.15331a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,368.391,567.15331Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M375.3928,565.1596a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80074,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,375.3928,565.1596Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M382.39463,563.16588a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,382.39463,563.16588Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M389.39646,561.17217a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,389.39646,561.17217Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M396.39828,559.17846a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80073,3.50092-.99685-.79749-2.80074A1.82069,1.82069,0,0,0,396.39828,559.17846Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M403.40011,557.18474a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,403.40011,557.18474Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M362.85857,575.53226a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,362.85857,575.53226Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M369.8604,573.53854a1.82071,1.82071,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99685-.79748-2.80074A1.82071,1.82071,0,0,0,369.8604,573.53854Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M376.86223,571.54483a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,376.86223,571.54483Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M383.86406,569.55112A1.82069,1.82069,0,0,0,382.612,571.8l.79749,2.80073,3.50091-.99685-.79748-2.80074A1.8207,1.8207,0,0,0,383.86406,569.55112Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M390.86589,567.5574a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,390.86589,567.5574Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M397.86772,565.56369a1.82069,1.82069,0,0,0-1.252,2.24888l.79749,2.80073,3.50091-.99685-.79748-2.80074A1.8207,1.8207,0,0,0,397.86772,565.56369Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M404.86955,563.57a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,404.86955,563.57Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M364.328,581.91749a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,364.328,581.91749Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M371.32984,579.92378a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80073,3.50092-.99685-.79749-2.80074A1.82068,1.82068,0,0,0,371.32984,579.92378Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M378.33167,577.93006a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,378.33167,577.93006Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M385.3335,575.93635a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80073,3.50092-.99685-.79749-2.80073A1.82068,1.82068,0,0,0,385.3335,575.93635Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M392.33533,573.94263a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,392.33533,573.94263Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M399.33715,571.94892a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80074,3.50092-.99686L401.586,573.201A1.82069,1.82069,0,0,0,399.33715,571.94892Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M406.339,569.9552a1.8207,1.8207,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,406.339,569.9552Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M385.76768,557.87148a11.58313,11.58313,0,0,0-17.65537-1.93733l-24.24207-10.628-10.05163,13.15661L368.2639,572.9907a11.6459,11.6459,0,0,0,17.50378-15.11922Z" transform="translate(-167.66498 -107.46078)" fill="#ffb6b6"/><path d="M323.31836,565.27051c-11.99879-1.68336-27.2458-10.99767-44.6051-27.32908a9.52968,9.52968,0,0,1-3.06614-7.02556c-.15716-9.20571,10.33705-20.14779,11.36222-21.194l12.79536-24.06375c.16419-.39722,4.68073-10.95185,12.70019-13.80688a12.369,12.369,0,0,1,10.29362,1.00055c13.50379,7.18022-3.22692,45.637-5.48922,50.67072l17.6091,11.52189,10.902,9.31336,16.15662,4.01759-7.34461,19.97833-24.98142-2.936A25.66441,25.66441,0,0,1,323.31836,565.27051Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><ellipse cx="317.08185" cy="379.6692" rx="30.78186" ry="30.11079" transform="translate(-265.27727 541.87185) rotate(-83.16773)" fill="#ffb6b6"/><path d="M238.66878,356.82878c5.79189-5.31738,9.15-12.89056,14.01887-19.13338,4.86892-6.24286,12.66023-11.41884,19.94129-8.95792,5.01909,1.69649,8.45363,6.71628,9.86116,12.02267,1.40708,5.30628,1.11538,10.9372.81277,16.45154,1.22266-11.26023,9.93752-21.27414,20.5732-23.63958,10.63488-2.36551,22.36887,3.10034,27.69919,12.90294a15.69484,15.69484,0,0,1,20.74959,2.04538c5.12175,5.8139,5.222,15.72371.22012,21.75744s-14.42966,7.37516-20.699,2.94525l-2.63127,1.89621c.775,4.82582-2.47246,10.02748-7.03187,11.26284-3.69716,1.00194-8.64734.16834-10.41039,3.711-1.23206,2.47537.16092,5.442,1.75644,7.64879,1.59507,2.20668,3.52607,4.51944,3.41677,7.2955-.16437,4.1887-4.8,6.58135-8.80224,6.98968-9.6506.9847-19.55661-4.61652-23.97946-13.559q-.12783-.25866-.28293-.52123a36.55018,36.55018,0,0,1-3.97488-28.62341c.53435-1.88035.39818-3.3429-.869-3.9552-5.47716-2.64655-21.97469-.44592-27.264,2.69569-5.28975,3.14156-9.75857,7.60245-14.89862,11.0056-5.14045,3.40315-11.45189,5.74706-17.24645,3.95835-4.64086-1.43258-8.26433-5.36057-10.48144-9.84053-2.21671-4.47987-3.19887-9.5099-4.02172-14.49037C214.88991,366.01465,229.55224,365.198,238.66878,356.82878Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M1030.56781,141.945H576.2748a1.807,1.807,0,0,1,0-3.61318h454.293a1.807,1.807,0,0,1,0,3.61318Z" transform="translate(-167.66498 -107.46078)" fill="#cacaca"/><ellipse cx="439.53414" cy="10.82345" rx="10.58751" ry="10.82345" fill="#3f3d56"/><ellipse cx="476.10916" cy="10.82345" rx="10.58751" ry="10.82345" fill="#3f3d56"/><ellipse cx="512.68417" cy="10.82345" rx="10.58751" ry="10.82345" fill="#3f3d56"/><path d="M1008.54655,110.14348h-25.981a1.96762,1.96762,0,0,0,0,3.93446h25.981a1.96762,1.96762,0,0,0,0-3.93446Z" transform="translate(-167.66498 -107.46078)" fill="#3f3d56"/><path d="M1008.54655,117.52785h-25.981a1.96762,1.96762,0,0,0,0,3.93446h25.981a1.96762,1.96762,0,0,0,0-3.93446Z" transform="translate(-167.66498 -107.46078)" fill="#3f3d56"/><path d="M1008.54655,124.90253h-25.981a1.96761,1.96761,0,0,0,0,3.93445h25.981a1.96761,1.96761,0,0,0,0-3.93445Z" transform="translate(-167.66498 -107.46078)" fill="#3f3d56"/><path d="M234.11529,557.167l.0151-.02038-.0151.04093Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><circle cx="690.52285" cy="91.79521" r="13.08937" fill="#e6e7e8"/><path d="M968.5105,228.2404H848.9964a3.89775,3.89775,0,1,1,0-7.79549H968.5105a3.89775,3.89775,0,1,1,0,7.79549Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M878.68007,243.64236H848.9964a3.89794,3.89794,0,1,1,0-7.79588h29.68367a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><circle cx="690.52285" cy="296.09983" r="13.08937" fill="#e6e7e8"/><path d="M968.5105,432.545H848.9964a3.89775,3.89775,0,1,1,0-7.7955H968.5105a3.89775,3.89775,0,1,1,0,7.7955Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M878.68007,447.947H848.9964a3.89794,3.89794,0,1,1,0-7.79588h29.68367a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><circle cx="479.85856" cy="265.09641" r="13.08937" fill="#e6e7e8"/><path d="M757.84621,401.5416H638.33211a3.89775,3.89775,0,1,1,0-7.7955h119.5141a3.89775,3.89775,0,1,1,0,7.7955Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M668.01578,416.94355H638.33211a3.89794,3.89794,0,1,1,0-7.79588h29.68367a3.89794,3.89794,0,1,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><circle cx="690.52285" cy="186.24655" r="13.08937" fill="#e6e7e8"/><path d="M968.5105,322.69174H848.9964a3.89775,3.89775,0,1,1,0-7.7955H968.5105a3.89775,3.89775,0,1,1,0,7.7955Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M920.81293,338.09369H848.9964a3.89794,3.89794,0,1,1,0-7.79588h71.81653a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M900.80289,353.49564H848.9964a3.89794,3.89794,0,1,1,0-7.79588h51.80649a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M738.84708,208.64888V346.07642a3.62474,3.62474,0,0,1-3.61558,3.62055H662.82063a88.84863,88.84863,0,0,1-19.387-26.08471c-.31612-.63225-.61742-1.26941-.90391-1.91647a88.00529,88.00529,0,0,1-7.82394-30.12509c-.05433-.64214-.09879-1.27931-.12843-1.92636-.09876-1.65467-.14323-3.33406-.14323-5.01837a88.44,88.44,0,0,1,6.2384-32.743c.247-.64706.50874-1.28917.78043-1.92633a88.97582,88.97582,0,0,1,24.44484-33.13317q.94833-.80761,1.91647-1.57071l.14846-.11869a46.83728,46.83728,0,0,1,29.22575-10.11566h38.043A3.62686,3.62686,0,0,1,738.84708,208.64888Z" transform="translate(-167.66498 -107.46078)" fill="#61dbcf"/><path d="M739.03978,251.883v-1.92633h-32.2935V205.01844h-1.92142v44.93823H667.81431V215.25279q-.97057.76309-1.91647,1.57071v33.13317H641.453c-.27169.63716-.53346,1.27927-.78043,1.92633h25.22527v37.76134H634.5774c.02964.647.0741,1.28422.12843,1.92636h31.192v30.12509H642.52977c.28649.64706.58779,1.28422.90391,1.91647h22.46416v25.324h1.91647v-25.324h37.01055v25.324h1.92142v-25.324h32.2935v-1.91647h-32.2935a30.11907,30.11907,0,0,1,30.12506-30.12509h2.16844v-1.92636h-32.2935V251.883Zm-34.21492,69.81279H667.81431V291.5707h37.01055Zm0-32.05145H667.81431v-.75571A37.00806,37.00806,0,0,1,704.82486,251.883Z" transform="translate(-167.66498 -107.46078)" opacity="0.2"/><path d="M735.39767,322.18112a3.77983,3.77983,0,0,1-2.73939-6.55137c.09531-.37883.16368-.65086.259-1.02968q-.05115-.12367-.10291-.24717c-3.47986-8.29769-25.685,14.83335-26.645,22.63179a30.029,30.029,0,0,0,.52714,10.32752,120.39228,120.39228,0,0,1-10.95162-50.00275,116.20235,116.20235,0,0,1,.72079-12.96332q.5971-5.293,1.65679-10.51055a121.78662,121.78662,0,0,1,24.1515-51.61646c6.87378.38364,12.898-.66348,13.47967-13.98532.10346-2.36972,1.86112-4.42157,2.24841-6.756-.65621.08608-1.32321.13986-1.97942.18285-.20443.01071-.41957.0215-.624.03229l-.0771.00345a3.74494,3.74494,0,0,1-3.07565-6.10115q.425-.523.85054-1.04556c.43036-.53793.87143-1.06508,1.30171-1.60292a1.86841,1.86841,0,0,0,.13986-.16144c.49494-.61322.9897-1.21564,1.48464-1.82886a10.82906,10.82906,0,0,0-3.55013-3.43168c-4.95942-2.90464-11.80147-.89293-15.38389,3.59312-3.59313,4.486-4.27083,10.77947-3.023,16.38431a43.39764,43.39764,0,0,0,6.003,13.3828c-.269.34429-.54872.67779-.81765,1.02208a122.57417,122.57417,0,0,0-12.79359,20.26811c1.0163-7.93864-11.41159-36.60795-16.21777-42.68052-5.773-7.29409-17.61107-4.11078-18.62815,5.13561q-.01476.13429-.02883.26849,1.07082.60411,2.09639,1.28238a5.12707,5.12707,0,0,1-2.06712,9.3303l-.10452.01614c-9.55573,13.64366,21.07745,49.15469,28.74517,41.18138a125.11185,125.11185,0,0,0-6.73449,31.69282,118.66326,118.66326,0,0,0,.08608,19.15987l-.03231-.22593c-1.70368-13.88233-30.93134-34.52259-39.46631-32.80332-4.91675.99042-9.75953.76526-9.01293,5.72484q.01788.11875.03635.2375a34.44529,34.44529,0,0,1,3.862,1.86106q1.07082.60423,2.09639,1.28237a5.12713,5.12713,0,0,1-2.06713,9.33039l-.10463.01606c-.07528.01079-.13987.02157-.21507.03237-4.34967,14.96631,27.90735,39.12,47.5177,31.4346l.0108,0a125.07594,125.07594,0,0,0,8.402,24.52806h30.01454c.10765-.3335.20443-.67779.30129-1.01129a34.10189,34.10189,0,0,1-8.3052-.49477c2.22693-2.73257,4.45377-5.48664,6.6807-8.21913a1.86617,1.86617,0,0,0,.13986-.16135c1.12956-1.39849,2.26992-2.78627,3.39948-4.18476l.00061-.00173a49.95245,49.95245,0,0,0-1.46367-12.725Zm-34.37066-67.613.0158-.02133-.0158.04282Zm-6.64833,59.93237-.25821-.58084c.01079-.41957.01079-.83915,0-1.26942,0-.11845-.0215-.23673-.0215-.35509.09678.74228.18285,1.48465.29042,2.22693Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/></svg>    
-                        </div>
-                        <h3 class="services__title">Web <br> Developer</h3>
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow-alt services__icon' ></i>
-                        </span>
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class='bx bx-x services__modal-close' ></i>
-                                <h3 class="services__modal-title">Web Developer</h3>
-                                <p class="services__modal-description">
-                                    I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
-                                </p>
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Designing some landing pages</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Creating jS, Jquery plugin</p>
-                                    </li>
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Using Laravel Api for React Website</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="services__card">
                         <div style="width: 100%;">
                         <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 841.59024 589" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="743.208 574.193 729.128 574.192 722.43 519.885 743.21 519.886 743.208 574.193" fill="#ffb8b8"/><path d="M926.00334,743.34094l-45.39888-.00169V742.765A17.67147,17.67147,0,0,1,898.275,725.0948h.00112l27.72809.00112Z" transform="translate(-179.20488 -155.5)" fill="#2f2e41"/><polygon points="805.349 539.578 796.21 550.289 750.55 520.133 764.039 504.326 805.349 539.578" fill="#ffb8b8"/><path d="M997.26727,701.20576l-29.46919,34.5344-.43682-.37273a17.67143,17.67143,0,0,1-1.97223-24.91172l.00073-.00086,17.99885-21.09237Z" transform="translate(-179.20488 -155.5)" fill="#2f2e41"/><polygon points="643.236 307.117 638.853 347.537 816.024 345.01 738.759 219.114 675.673 216.848 643.236 307.117" fill="#2f2e41"/><polygon points="643.236 307.117 638.853 347.537 816.024 345.01 738.759 219.114 675.673 216.848 643.236 307.117" opacity="0.28"/><path d="M857.27966,469.55618l-6.25477,36.98405v33.05813L901.455,556.05955s-5.90374,128.40409,1.96683,136.58258l-.19337,19.74247,22,1,.17941-13.89387L934.735,595.635l5.49349-76.25041-8.90664-57.8109Z" transform="translate(-179.20488 -155.5)" fill="#2f2e41"/><path d="M896.35029,501.39223l-45.3254,38.20613s-2.6527,68.93184,4.08383,77.01567c5.786,6.94318,81.03774,66.83187,81.03774,66.83187s13.37442,12.26792,20.86947,12.46353,16.21255-15.52483,16.21255-15.52483l-17.35829-13.18827S910.901,625.22041,897.54884,608.5302c-5.38922-6.73653-5.38922-7.41018-5.38922-7.41018l1.84061-28.01427,18.52508-51.99127Z" transform="translate(-179.20488 -155.5)" fill="#2f2e41"/><polygon points="669.024 162.885 649.482 161.079 631.756 164.033 594.222 164.045 591.024 191.249 625.277 198.914 633.624 194.823 668.419 208.08 669.024 162.885" fill="#2f2e41"/><path d="M871.56928,318.29985s41.47357-3.88605,50.90471,3.52413,29.64072,154.26646,29.64072,154.26646l-80.54543,4.54583-14.4396-9.93505,4.0988-73.31662Z" transform="translate(-179.20488 -155.5)" fill="#ccc"/><polygon points="705.024 161.885 659.275 162.889 616.622 355.62 650.305 363.031 705.024 161.885" fill="#2f2e41"/><polygon points="737.546 160.256 773.583 171.535 771.536 250.722 816.024 345.396 763.725 350.905 722.386 248.675 737.546 160.256" fill="#2f2e41"/><path d="M976.17566,510.51266a11.51329,11.51329,0,0,0-.43624-17.64888l7.24981-25.2913-14.29491-8.15427-9.73651,35.86a11.5757,11.5757,0,0,0,17.21785,15.23444Z" transform="translate(-179.20488 -155.5)" fill="#ffb8b8"/><path d="M931.90513,329.23416l21.32335-1.84956s19.1431,20.02168,23.4982,35.52394,9.07066,64.00526,9.07066,64.00526l-1.96706,70.95509L958.90513,480.9427l-1.67172-61.03065Z" transform="translate(-179.20488 -155.5)" fill="#2f2e41"/><circle cx="900.23883" cy="279.0718" r="30.2266" transform="translate(44.35273 779.63092) rotate(-61.33681)" fill="#ffb8b8"/><path d="M896.86876,266.45286c-3.96584-.91637-8.08269.09909-12.09946.75737s-8.44336.87528-11.84109-1.36586c-2.50928-1.65512-4.052-4.39327-5.5007-7.02712a8.08807,8.08807,0,0,1-1.18324-3.10061c-.17057-1.94791,1.06856-3.72514,2.3844-5.17153,6.112-6.71846,15.04376-10.39563,24.051-11.56369a41.55433,41.55433,0,0,1,21.96117,2.68176c6.83748,2.99893,12.71514,8.49079,15.40335,15.45628a43.8945,43.8945,0,0,1,2.30051,11.03757,32.97038,32.97038,0,0,1,.15507,8.35909,35.83247,35.83247,0,0,1-1.61995,6.056l-4.453,13.446a8.85863,8.85863,0,0,1-1.751,3.466,3.02927,3.02927,0,0,1-3.54735.77718,11.03957,11.03957,0,0,0,.15962-4.46052,3.76376,3.76376,0,0,0-2.96974-2.99493c-1.64132-.17418-3.04344,1.09814-4.60042,1.64611a5.65951,5.65951,0,0,1-7.03462-3.81764q-.06393-.21546-.11053-.43552c-.24579-1.53722.1669-3.18288-.41576-4.62647-.68269-1.69135-2.493-2.57757-3.853-3.79294a8.86863,8.86863,0,0,1-2.4334-9.21678c.36409-1.119,1.39236-1.62773,1.18665-2.91325C900.78734,267.96287,898.30087,266.78376,896.86876,266.45286Z" transform="translate(-179.20488 -155.5)" fill="#2f2e41"/><path d="M560.81664,394.22516H179.20488V155.5H560.81664Z" transform="translate(-179.20488 -155.5)" fill="#fff"/><path d="M560.81664,394.22516H179.20488V155.5H560.81664ZM180.9474,392.48264H559.07412V157.24252H180.9474Z" transform="translate(-179.20488 -155.5)" fill="#3f3d56"/><path d="M514.20424,724.86865H296.38931V486.14349H514.20424Z" transform="translate(-179.20488 -155.5)" fill="#fff"/><path d="M514.20424,724.86865H296.38931V486.14349H514.20424Zm-216.07241-1.74252H512.46172V487.886H298.13183Z" transform="translate(-179.20488 -155.5)" fill="#3f3d56"/><rect x="260.07105" y="546.82166" width="45.30551" height="1.8367" fill="#3f3d56"/><rect x="260.07105" y="552.33175" width="45.30551" height="1.8367" fill="#3f3d56"/><rect x="260.07105" y="557.84189" width="45.30551" height="1.8367" fill="#3f3d56"/><path d="M405.2968,528.835v19.16772a57.50315,57.50315,0,0,1,40.66088,98.164l13.55361,13.55361A76.67086,76.67086,0,0,0,405.2968,528.835Z" transform="translate(-179.20488 -155.5)" fill="#e6e6e6"/><path d="M459.51129,659.72034l-13.55361-13.55361a57.48875,57.48875,0,0,1-75.4511,5.11572l-11.60149,15.26513A76.66891,76.66891,0,0,0,459.51129,659.72034Z" transform="translate(-179.20488 -155.5)" fill="#575a89"/><path d="M347.79366,605.50585a57.50312,57.50312,0,0,1,57.50314-57.50314V528.835a76.6701,76.6701,0,0,0-46.39171,137.71259l11.60152-15.26513A57.403,57.403,0,0,1,347.79366,605.50585Z" transform="translate(-179.20488 -155.5)" fill="#61dbcf"/><path d="M836.57034,576.7545H618.75541V338.02891H836.57034Z" transform="translate(-179.20488 -155.5)" fill="#fff"/><path d="M836.57034,576.7545H618.75541V338.02891H836.57034ZM620.49793,575.012H834.82782V339.77143H620.49793Z" transform="translate(-179.20488 -155.5)" fill="#3f3d56"/><rect x="470.9159" y="328.46512" width="39.20669" height="62.7307" fill="#575a89"/><rect x="527.54778" y="285.77339" width="39.20669" height="105.42243" fill="#e6e6e6"/><rect x="584.17967" y="236.11159" width="39.20669" height="155.08423" fill="#61dbcf"/><polygon points="636.455 392.939 460.461 392.939 460.461 210.845 462.203 210.845 462.203 391.196 636.455 391.196 636.455 392.939" fill="#3f3d56"/><circle cx="594.0236" cy="176.8846" r="12" fill="#ffb8b8"/><path d="M1019.79512,744.5h-187a1,1,0,0,1,0-2h187a1,1,0,0,1,0,2Z" transform="translate(-179.20488 -155.5)" fill="#ccc"/><path d="M507.81987,344.2986H232.20165a.86259.86259,0,0,1-.86256-.86255V211.33223a.86256.86256,0,0,1,1.72512,0V342.57349H507.81987a.86256.86256,0,1,1,0,1.72511Z" transform="translate(-179.20488 -155.5)" fill="#3f3d56"/><path d="M291.08926,334.81045H266.02071a2.56337,2.56337,0,0,1-2.56052-2.5603V297.693a2.56337,2.56337,0,0,1,2.56052-2.5603h25.06855a2.56337,2.56337,0,0,1,2.56051,2.5603v34.55712A2.56337,2.56337,0,0,1,291.08926,334.81045Z" transform="translate(-179.20488 -155.5)" fill="#61dbcf"/><path d="M336.8049,334.81045H311.73635a2.56336,2.56336,0,0,1-2.56051-2.5603V264.91577a2.56337,2.56337,0,0,1,2.56051-2.5603H336.8049a2.56337,2.56337,0,0,1,2.56051,2.5603v67.33438A2.56336,2.56336,0,0,1,336.8049,334.81045Z" transform="translate(-179.20488 -155.5)" fill="#61dbcf"/><path d="M382.52054,334.81045H357.452a2.56337,2.56337,0,0,1-2.56051-2.5603V297.693a2.56337,2.56337,0,0,1,2.56051-2.5603h25.06855a2.56337,2.56337,0,0,1,2.56052,2.5603v34.55712A2.56337,2.56337,0,0,1,382.52054,334.81045Z" transform="translate(-179.20488 -155.5)" fill="#61dbcf"/><path d="M428.23619,334.81045H403.16763a2.50734,2.50734,0,0,1-2.56051-2.44431V251.8614a2.50734,2.50734,0,0,1,2.56051-2.44432h25.06856a2.50734,2.50734,0,0,1,2.56051,2.44432v80.50474A2.50734,2.50734,0,0,1,428.23619,334.81045Z" transform="translate(-179.20488 -155.5)" fill="#61dbcf"/><path d="M473.95183,334.81045H448.88328a2.56336,2.56336,0,0,1-2.56051-2.5603V228.68828a2.56337,2.56337,0,0,1,2.56051-2.5603h25.06855a2.56337,2.56337,0,0,1,2.56051,2.5603V332.25015A2.56337,2.56337,0,0,1,473.95183,334.81045Z" transform="translate(-179.20488 -155.5)" fill="#61dbcf"/><circle cx="99.3501" cy="124.10666" r="5.17536" fill="#3f3d56"/><circle cx="145.06574" cy="90.46685" r="5.17536" fill="#3f3d56"/><circle cx="190.78139" cy="124.10666" r="5.17536" fill="#3f3d56"/><circle cx="236.49703" cy="74.07822" r="5.17536" fill="#3f3d56"/><circle cx="282.21267" cy="55.10191" r="5.17536" fill="#3f3d56"/><polygon points="190.89 125.266 145.066 90.943 99.867 124.797 98.833 123.416 145.066 88.787 190.672 122.947 235.993 73.352 236.175 73.278 281.89 54.858 282.535 56.459 237.001 74.805 190.89 125.266" fill="#3f3d56"/></svg>    
                         </div>
-                        <h3 class="services__title">Data <br> Analysing</h3>
+                        <h3 class="services__title">Data <br> Analysis</h3>
                         <span class="services__button">
                             See More <i class='bx bx-right-arrow-alt services__icon' ></i>
                         </span>
                         <div class="services__modal">
                             <div class="services__modal-content">
                                 <i class='bx bx-x services__modal-close' ></i>
-                                <h3 class="services__modal-title">Back-end Developer</h3>
+                                <h3 class="services__modal-title">Data Analysis</h3>
                                 <p class="services__modal-description">
-                                    I've started Back-end developing with PHP and Laravel framework in intership but after a while I prefer to start Django because of Python
+                                    Skilled at extracting meaningful insights from data, I have honed my ability to manipulate, visualize, and interpret large datasets to drive decision-making.
                                 </p>
                                 <ul class="services__modal-list">
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Blog and Todo List with Laravel<br> <a href="">Github Link<i class='bx bx-right-arrow-alt services__icon' ></i></a> </p>
+                                        <p class="services__modal-info">Conducted comprehensive data cleaning and preprocessing for analytics</p>
                                     </li>
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">I created full streaming website with Laravel<br> <a href="">Github Link<i class='bx bx-right-arrow-alt services__icon' ></i></a></p>
+                                        <p class="services__modal-info">Designed interactive dashboards for business intelligence with Tableau and PowerBI</p>
                                     </li>
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Blog WebSite with Django</p>
+                                        <p class="services__modal-info">Performed A/B testing and statistical analysis to guide marketing strategies</p>
                                     </li>
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Personal Website with Django</p>
+                                        <p class="services__modal-info">Automated data workflows with Python to increase efficiency</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Utilized regression models for forecasting sales and customer trends</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Inventing new way to handling unbalance data</p>
                                     </li>
                                 </ul>
                             </div>
@@ -347,25 +311,57 @@
                                 <i class='bx bx-x services__modal-close' ></i>
                                 <h3 class="services__modal-title">Deep Learning and Machine Learning Developer</h3>
                                 <p class="services__modal-description">
-                                    Artificial Intelligence is one of the most interesting fields in my major so I made an effort to learn and apply this highly controversial topic in my projects
+                                    Passionate about creating intelligent solutions, I specialized in Machine Learning with a focus on developing predictive models and deep learning applications.
                                 </p>
                                 <ul class="services__modal-list">
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Using Pandas and matplotlib for cleaning and visualizing data</p>
+                                        <p class="services__modal-info">I am adept at refining data into actionable insights, utilizing Pandas for data manipulation and Matplotlib for visualization to illuminate the narratives hidden within numbers. My expertise in machine learning encompasses a broad spectrum of methodologies, from regression analysis for trend forecasting to clustering for intricate data segmentation and classification for discerning distinct patterns.</p>
                                     </li>
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Using Machine learning (supervise, unsupervise) methods (Regression, Clustering, Classification)</p>
+                                        <p class="services__modal-info">In deep learning, I apply logistic regression and probe the depths of neural networks, including RNNs for chronological data interpretation and CNNs for image recognition tasks. Committed to the continuous pursuit of knowledge, I am honing my skills in statistical foundations to augment the potency of these advanced analytical tools.</p>
                                         
                                     </li>
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">Using Deeplearning Method (Logestic Regression,...) and trying to learn more about the statestics that exist behind them</p>
+                                        <p class="services__modal-info">GAN's & NLP</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <div style="width: 100%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 864.67004 685.07844" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M268.97109,622.8a3.61324,3.61324,0,0,1-2.61865-6.26263c.09111-.36213.15647-.62217.24758-.9843q-.0489-.11821-.09838-.23627a9.7031,9.7031,0,0,0-17.89848.06652c-2.92739,7.05051-6.65447,14.11306-7.57217,21.56779a28.7057,28.7057,0,0,0,.50391,9.87235A115.08618,115.08618,0,0,1,231.066,599.02456a111.07965,111.07965,0,0,1,.689-12.392q.5708-5.05968,1.58377-10.04731a116.41931,116.41931,0,0,1,23.087-49.34152,30.98252,30.98252,0,0,0,12.88556-13.36892,23.63367,23.63367,0,0,0,2.14933-6.45822c-.62729.08228-1.26489.1337-1.89218.1748-.19542.01023-.40108.02054-.5965.03086l-.0737.0033a3.57989,3.57989,0,0,1-2.94009-5.83225q.40627-.5.813-.99948c.4114-.51422.833-1.01813,1.24434-1.53227a1.78518,1.78518,0,0,0,.13369-.15433c.47313-.58619.94609-1.16206,1.41921-1.74825a10.35184,10.35184,0,0,0-3.39366-3.28044c-4.74083-2.77661-11.28133-.85357-14.70586,3.43477-3.43476,4.28825-4.0826,10.30437-2.88976,15.66218a41.48513,41.48513,0,0,0,5.73842,12.793c-.25715.32911-.52454.64791-.78161.977a117.172,117.172,0,0,0-12.22973,19.37481,48.70929,48.70929,0,0,0-2.908-22.62447c-2.78347-6.71479-8.00064-12.37-12.595-18.17495-5.51857-6.9726-16.83488-3.92959-17.80713,4.90927q-.01412.12837-.02757.25666,1.02363.57749,2.004,1.22585a4.9011,4.9011,0,0,1-1.976,8.91908l-.09994.01544a48.767,48.767,0,0,0,1.28544,7.29124,50.20986,50.20986,0,0,0,24.99983,31.46836c.40108.20566.79193.41132,1.193.60674a119.59776,119.59776,0,0,0-6.43767,30.296,113.43513,113.43513,0,0,0,.08228,18.31541l-.03086-.216a29.97411,29.97411,0,0,0-10.23241-17.3076c-7.87438-6.46853-18.9994-8.8505-27.49446-14.04993a5.62528,5.62528,0,0,0-8.61571,5.47251q.01709.11352.03474.227a32.92807,32.92807,0,0,1,3.69184,1.779q1.02362.57761,2.004,1.22586a4.90115,4.90115,0,0,1-1.976,8.91916l-.1.01535c-.072.01032-.13369.02063-.20557.03095a48.80772,48.80772,0,0,0,8.97767,14.05786,50.25445,50.25445,0,0,0,36.44572,15.99129h.01032a119.5619,119.5619,0,0,0,8.03167,23.447h28.69167c.10291-.3188.19542-.64792.288-.96672a32.59875,32.59875,0,0,1-7.93916-.473c2.12878-2.61213,4.25747-5.24482,6.38625-7.85688a1.7799,1.7799,0,0,0,.1337-.15424c1.07978-1.33685,2.16987-2.66347,3.24965-4.00032l.00058-.00165A47.75037,47.75037,0,0,0,268.972,622.8006Z" transform="translate(-167.66498 -107.46078)" fill="#f2f2f2"/><path d="M607.335,648.80514a1.18647,1.18647,0,0,1-1.19006,1.19H168.855a1.19,1.19,0,0,1,0-2.38h437.29A1.18651,1.18651,0,0,1,607.335,648.80514Z" transform="translate(-167.66498 -107.46078)" fill="#ccc"/><path d="M396.64724,495.94436a11.58313,11.58313,0,0,0-14.25915,10.5897l-24.99881,8.7,1.58175,16.48119,35.13061-12.78194a11.6459,11.6459,0,0,0,2.5456-22.989Z" transform="translate(-167.66498 -107.46078)" fill="#ffb6b6"/><path d="M355.90521,543.8479c-9.94014,6.92808-27.452,10.47225-51.28551,10.30976a9.52967,9.52967,0,0,1-7.02647-3.064c-6.37724-6.64084-6.12819-21.79985-6.0884-23.26407l-6.99-26.34246c-.14985-.40284-4.01885-11.21165-.0827-18.75948a12.369,12.369,0,0,1,8.22578-6.26865c14.78244-3.92266,28.67846,35.64678,30.44432,40.87537l20.745-3.53279,14.32637-.58923,14.57563-8.0454,8.20635,19.64009-20.30842,14.84114A25.664,25.664,0,0,1,355.90521,543.8479Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><polygon points="228.268 654.202 243.549 654.916 253.575 596.315 231.022 595.261 228.268 654.202" fill="#ffb6b6"/><path d="M392.496,753.947l24.22343-.31212-.484,10.34948,22.224,16.935a6.47174,6.47174,0,0,1-4.22455,11.61271l-28.75863-1.3449-4.47824-10.469-2.41421,10.14671-10.84315-.50708Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><polygon points="387.812 528.378 393.379 514.129 341.068 485.876 314.642 502.486 387.812 528.378" fill="#ffb6b6"/><path d="M547.06718,636.62606l7.45657-23.04933,9.65027,3.77071L587.33077,601.712a6.47174,6.47174,0,0,1,9.65,7.71881L586.50288,636.2465l-11.35162.89228,8.84044,5.53451-3.95057,10.11059Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M254.96083,593.43123s6.34645,40.51574,36.34645,43.51574,57.65355-10.51574,57.65355-10.51574l84-25.87006s89.34645,25.3858,104.34645,29.3858c0,0,10.34646-23.48425,10-25-3.19036-13.95785-7.34645-4.51574-7.34645-4.51574l-95-42s-15-4-41,7S308.30728,602.947,308.30728,602.947Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M255.30728,590.947s-5.00318,48.53652,24.22042,55.95146c27.77958,7.04854,66.09816-.182,66.09816-.182l45.68142-4.76945s2,58.69551,2,87.69551a220.2581,220.2581,0,0,0,28,2c2,0,2.13267-1.04791,2.13267-1.04791l3.8727-101.44374a31.65753,31.65753,0,0,0-32.75435-33.585q-3.23463.12342-6.78643.45826c-28.10229,2.69471-62.99044-3.0339-62.99044-3.0339Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M336.36554,520.53537s11.86391,71.7439,3.84632,77.471-19.01257,5.74952-19.01257,5.74952l-2.55664-39.61253Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M316.57845,432.424l15.86267,15.07334a46.75218,46.75218,0,0,1,9.19974,55.60365l-7.58263,14.4597Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M313.03118,434.95847,334.525,459.44052a34.35461,34.35461,0,0,1,8.36232,19.19756v0a34.35478,34.35478,0,0,1-.39141,9.68345l-8.10023,44.03424L328.30728,595.947s-47.00333,14.2416-51.81437-7.74972S313.03118,434.95847,313.03118,434.95847Z" transform="translate(-167.66498 -107.46078)" fill="#61dbcf"/><path d="M292.85589,601.92344c-30.89816-5.14908-38.46709-6.17146-38.9385-6.35153l-.4723-.18021,3.097-18.58405,13.0777-32.13493c.8493-10.51166,6.35756-24.75431,3.20637-36.19425-9.16076-33.257,5.7226-80.25293,12.52893-83.85312l18.86916-12.37,6.62355,6.07267L322.33229,434.405c9.44908,42.09125,15.97518,81.32286,15.65782,83.72078l-5.832,41.20669-6.872,15.80646C304.4384,585.198,318.45716,606.18982,292.85589,601.92344Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M348.7962,571.69324l48.51412-12.97988,4.2716-1.01288,3.04581-.72337,3.54955-.83929.02836-.00653a2.01286,2.01286,0,0,1,1.507.25082l18.01367,21.59765a1.59,1.59,0,0,1,.42377.3806.71425.71425,0,0,1,.12815.13484,2.05595,2.05595,0,0,1-1.15876,3.21l-72.373,16.65523a2.03879,2.03879,0,0,1-2.04911-.72369l-.73444-.95155-4.005-19.28585-.28495-2.50426a1.99609,1.99609,0,0,1-.37549-.78762A2.02751,2.02751,0,0,1,348.7962,571.69324Z" transform="translate(-167.66498 -107.46078)" fill="#e6e6e6"/><path d="M351.96256,596.6835l.73876.95465a2.03761,2.03761,0,0,0,2.04387.72353l72.37552-16.6558a2.05225,2.05225,0,0,0,1.15648-3.20762.61137.61137,0,0,0-.12633-.13526Z" transform="translate(-167.66498 -107.46078)" opacity="0.17" style="isolation:isolate"/><path d="M407.81609,555.99683l-1.3093-92.26487a2.10556,2.10556,0,0,1,.46692-1.54178l9.2739-19.30128.96329-1.17042a2.13224,2.13224,0,0,1,1.42522-.7538l2.01855-.18813a2.10671,2.10671,0,0,1,2.30267,1.8905h0l1.81786,97.62365.00163.00711.90065,9.3997,1.06711,11.1618.00326.0142,1.66577,17.36642a2.06171,2.06171,0,0,1-.557,1.63723,2.09148,2.09148,0,0,1-1.5845.67839l-1.31342-.02644a2.13954,2.13954,0,0,1-1.36383-.53779l-.73463-.66014-.34031-.31016-14.00732-21.653A2.09359,2.09359,0,0,1,407.81609,555.99683Z" transform="translate(-167.66498 -107.46078)" fill="#e6e6e6"/><path d="M416.251,442.88882l6.26741,136.13588.34267.306.73219.65824a2.1323,2.1323,0,0,0,1.36433.53835l1.31527.02643a2.11527,2.11527,0,0,0,2.1413-2.31406L422.95483,442.67a2.1085,2.1085,0,0,0-2.29913-1.89713l-2.02255.19377a2.07831,2.07831,0,0,0-1.41837.75419Z" transform="translate(-167.66498 -107.46078)" opacity="0.17" style="isolation:isolate"/><polygon points="249.113 340.929 240.632 361.864 241.681 424.491 250.863 437.77 249.113 340.929" fill="#61dbcf"/><path d="M354.38731,571.14074a1.8207,1.8207,0,0,0-1.252,2.24889l3.73635,15.57119,3.50092-.99685-3.73636-15.5712A1.8207,1.8207,0,0,0,354.38731,571.14074Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M361.38914,569.147a1.82069,1.82069,0,0,0-1.252,2.24888l.79748,2.80074,3.50092-.99686-.79749-2.80073A1.82068,1.82068,0,0,0,361.38914,569.147Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M368.391,567.15331a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,368.391,567.15331Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M375.3928,565.1596a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80074,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,375.3928,565.1596Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M382.39463,563.16588a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,382.39463,563.16588Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M389.39646,561.17217a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,389.39646,561.17217Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M396.39828,559.17846a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80073,3.50092-.99685-.79749-2.80074A1.82069,1.82069,0,0,0,396.39828,559.17846Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M403.40011,557.18474a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,403.40011,557.18474Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M362.85857,575.53226a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,362.85857,575.53226Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M369.8604,573.53854a1.82071,1.82071,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99685-.79748-2.80074A1.82071,1.82071,0,0,0,369.8604,573.53854Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M376.86223,571.54483a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,376.86223,571.54483Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M383.86406,569.55112A1.82069,1.82069,0,0,0,382.612,571.8l.79749,2.80073,3.50091-.99685-.79748-2.80074A1.8207,1.8207,0,0,0,383.86406,569.55112Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M390.86589,567.5574a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,390.86589,567.5574Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M397.86772,565.56369a1.82069,1.82069,0,0,0-1.252,2.24888l.79749,2.80073,3.50091-.99685-.79748-2.80074A1.8207,1.8207,0,0,0,397.86772,565.56369Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M404.86955,563.57a1.8207,1.8207,0,0,0-1.252,2.24889l.79749,2.80073,3.50091-.99686-.79748-2.80073A1.8207,1.8207,0,0,0,404.86955,563.57Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M364.328,581.91749a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,364.328,581.91749Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M371.32984,579.92378a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80073,3.50092-.99685-.79749-2.80074A1.82068,1.82068,0,0,0,371.32984,579.92378Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M378.33167,577.93006a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,378.33167,577.93006Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M385.3335,575.93635a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80073,3.50092-.99685-.79749-2.80073A1.82068,1.82068,0,0,0,385.3335,575.93635Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M392.33533,573.94263a1.82069,1.82069,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.82069,1.82069,0,0,0,392.33533,573.94263Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M399.33715,571.94892a1.82068,1.82068,0,0,0-1.252,2.24888l.79748,2.80074,3.50092-.99686L401.586,573.201A1.82069,1.82069,0,0,0,399.33715,571.94892Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M406.339,569.9552a1.8207,1.8207,0,0,0-1.252,2.24889l.79748,2.80073,3.50092-.99686-.79749-2.80073A1.8207,1.8207,0,0,0,406.339,569.9552Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M385.76768,557.87148a11.58313,11.58313,0,0,0-17.65537-1.93733l-24.24207-10.628-10.05163,13.15661L368.2639,572.9907a11.6459,11.6459,0,0,0,17.50378-15.11922Z" transform="translate(-167.66498 -107.46078)" fill="#ffb6b6"/><path d="M323.31836,565.27051c-11.99879-1.68336-27.2458-10.99767-44.6051-27.32908a9.52968,9.52968,0,0,1-3.06614-7.02556c-.15716-9.20571,10.33705-20.14779,11.36222-21.194l12.79536-24.06375c.16419-.39722,4.68073-10.95185,12.70019-13.80688a12.369,12.369,0,0,1,10.29362,1.00055c13.50379,7.18022-3.22692,45.637-5.48922,50.67072l17.6091,11.52189,10.902,9.31336,16.15662,4.01759-7.34461,19.97833-24.98142-2.936A25.66441,25.66441,0,0,1,323.31836,565.27051Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><ellipse cx="317.08185" cy="379.6692" rx="30.78186" ry="30.11079" transform="translate(-265.27727 541.87185) rotate(-83.16773)" fill="#ffb6b6"/><path d="M238.66878,356.82878c5.79189-5.31738,9.15-12.89056,14.01887-19.13338,4.86892-6.24286,12.66023-11.41884,19.94129-8.95792,5.01909,1.69649,8.45363,6.71628,9.86116,12.02267,1.40708,5.30628,1.11538,10.9372.81277,16.45154,1.22266-11.26023,9.93752-21.27414,20.5732-23.63958,10.63488-2.36551,22.36887,3.10034,27.69919,12.90294a15.69484,15.69484,0,0,1,20.74959,2.04538c5.12175,5.8139,5.222,15.72371.22012,21.75744s-14.42966,7.37516-20.699,2.94525l-2.63127,1.89621c.775,4.82582-2.47246,10.02748-7.03187,11.26284-3.69716,1.00194-8.64734.16834-10.41039,3.711-1.23206,2.47537.16092,5.442,1.75644,7.64879,1.59507,2.20668,3.52607,4.51944,3.41677,7.2955-.16437,4.1887-4.8,6.58135-8.80224,6.98968-9.6506.9847-19.55661-4.61652-23.97946-13.559q-.12783-.25866-.28293-.52123a36.55018,36.55018,0,0,1-3.97488-28.62341c.53435-1.88035.39818-3.3429-.869-3.9552-5.47716-2.64655-21.97469-.44592-27.264,2.69569-5.28975,3.14156-9.75857,7.60245-14.89862,11.0056-5.14045,3.40315-11.45189,5.74706-17.24645,3.95835-4.64086-1.43258-8.26433-5.36057-10.48144-9.84053-2.21671-4.47987-3.19887-9.5099-4.02172-14.49037C214.88991,366.01465,229.55224,365.198,238.66878,356.82878Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><path d="M1030.56781,141.945H576.2748a1.807,1.807,0,0,1,0-3.61318h454.293a1.807,1.807,0,0,1,0,3.61318Z" transform="translate(-167.66498 -107.46078)" fill="#cacaca"/><ellipse cx="439.53414" cy="10.82345" rx="10.58751" ry="10.82345" fill="#3f3d56"/><ellipse cx="476.10916" cy="10.82345" rx="10.58751" ry="10.82345" fill="#3f3d56"/><ellipse cx="512.68417" cy="10.82345" rx="10.58751" ry="10.82345" fill="#3f3d56"/><path d="M1008.54655,110.14348h-25.981a1.96762,1.96762,0,0,0,0,3.93446h25.981a1.96762,1.96762,0,0,0,0-3.93446Z" transform="translate(-167.66498 -107.46078)" fill="#3f3d56"/><path d="M1008.54655,117.52785h-25.981a1.96762,1.96762,0,0,0,0,3.93446h25.981a1.96762,1.96762,0,0,0,0-3.93446Z" transform="translate(-167.66498 -107.46078)" fill="#3f3d56"/><path d="M1008.54655,124.90253h-25.981a1.96761,1.96761,0,0,0,0,3.93445h25.981a1.96761,1.96761,0,0,0,0-3.93445Z" transform="translate(-167.66498 -107.46078)" fill="#3f3d56"/><path d="M234.11529,557.167l.0151-.02038-.0151.04093Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/><circle cx="690.52285" cy="91.79521" r="13.08937" fill="#e6e7e8"/><path d="M968.5105,228.2404H848.9964a3.89775,3.89775,0,1,1,0-7.79549H968.5105a3.89775,3.89775,0,1,1,0,7.79549Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M878.68007,243.64236H848.9964a3.89794,3.89794,0,1,1,0-7.79588h29.68367a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><circle cx="690.52285" cy="296.09983" r="13.08937" fill="#e6e7e8"/><path d="M968.5105,432.545H848.9964a3.89775,3.89775,0,1,1,0-7.7955H968.5105a3.89775,3.89775,0,1,1,0,7.7955Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M878.68007,447.947H848.9964a3.89794,3.89794,0,1,1,0-7.79588h29.68367a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><circle cx="479.85856" cy="265.09641" r="13.08937" fill="#e6e7e8"/><path d="M757.84621,401.5416H638.33211a3.89775,3.89775,0,1,1,0-7.7955h119.5141a3.89775,3.89775,0,1,1,0,7.7955Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M668.01578,416.94355H638.33211a3.89794,3.89794,0,1,1,0-7.79588h29.68367a3.89794,3.89794,0,1,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><circle cx="690.52285" cy="186.24655" r="13.08937" fill="#e6e7e8"/><path d="M968.5105,322.69174H848.9964a3.89775,3.89775,0,1,1,0-7.7955H968.5105a3.89775,3.89775,0,1,1,0,7.7955Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M920.81293,338.09369H848.9964a3.89794,3.89794,0,1,1,0-7.79588h71.81653a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M900.80289,353.49564H848.9964a3.89794,3.89794,0,1,1,0-7.79588h51.80649a3.89794,3.89794,0,0,1,0,7.79588Z" transform="translate(-167.66498 -107.46078)" fill="#e6e7e8"/><path d="M738.84708,208.64888V346.07642a3.62474,3.62474,0,0,1-3.61558,3.62055H662.82063a88.84863,88.84863,0,0,1-19.387-26.08471c-.31612-.63225-.61742-1.26941-.90391-1.91647a88.00529,88.00529,0,0,1-7.82394-30.12509c-.05433-.64214-.09879-1.27931-.12843-1.92636-.09876-1.65467-.14323-3.33406-.14323-5.01837a88.44,88.44,0,0,1,6.2384-32.743c.247-.64706.50874-1.28917.78043-1.92633a88.97582,88.97582,0,0,1,24.44484-33.13317q.94833-.80761,1.91647-1.57071l.14846-.11869a46.83728,46.83728,0,0,1,29.22575-10.11566h38.043A3.62686,3.62686,0,0,1,738.84708,208.64888Z" transform="translate(-167.66498 -107.46078)" fill="#61dbcf"/><path d="M739.03978,251.883v-1.92633h-32.2935V205.01844h-1.92142v44.93823H667.81431V215.25279q-.97057.76309-1.91647,1.57071v33.13317H641.453c-.27169.63716-.53346,1.27927-.78043,1.92633h25.22527v37.76134H634.5774c.02964.647.0741,1.28422.12843,1.92636h31.192v30.12509H642.52977c.28649.64706.58779,1.28422.90391,1.91647h22.46416v25.324h1.91647v-25.324h37.01055v25.324h1.92142v-25.324h32.2935v-1.91647h-32.2935a30.11907,30.11907,0,0,1,30.12506-30.12509h2.16844v-1.92636h-32.2935V251.883Zm-34.21492,69.81279H667.81431V291.5707h37.01055Zm0-32.05145H667.81431v-.75571A37.00806,37.00806,0,0,1,704.82486,251.883Z" transform="translate(-167.66498 -107.46078)" opacity="0.2"/><path d="M735.39767,322.18112a3.77983,3.77983,0,0,1-2.73939-6.55137c.09531-.37883.16368-.65086.259-1.02968q-.05115-.12367-.10291-.24717c-3.47986-8.29769-25.685,14.83335-26.645,22.63179a30.029,30.029,0,0,0,.52714,10.32752,120.39228,120.39228,0,0,1-10.95162-50.00275,116.20235,116.20235,0,0,1,.72079-12.96332q.5971-5.293,1.65679-10.51055a121.78662,121.78662,0,0,1,24.1515-51.61646c6.87378.38364,12.898-.66348,13.47967-13.98532.10346-2.36972,1.86112-4.42157,2.24841-6.756-.65621.08608-1.32321.13986-1.97942.18285-.20443.01071-.41957.0215-.624.03229l-.0771.00345a3.74494,3.74494,0,0,1-3.07565-6.10115q.425-.523.85054-1.04556c.43036-.53793.87143-1.06508,1.30171-1.60292a1.86841,1.86841,0,0,0,.13986-.16144c.49494-.61322.9897-1.21564,1.48464-1.82886a10.82906,10.82906,0,0,0-3.55013-3.43168c-4.95942-2.90464-11.80147-.89293-15.38389,3.59312-3.59313,4.486-4.27083,10.77947-3.023,16.38431a43.39764,43.39764,0,0,0,6.003,13.3828c-.269.34429-.54872.67779-.81765,1.02208a122.57417,122.57417,0,0,0-12.79359,20.26811c1.0163-7.93864-11.41159-36.60795-16.21777-42.68052-5.773-7.29409-17.61107-4.11078-18.62815,5.13561q-.01476.13429-.02883.26849,1.07082.60411,2.09639,1.28238a5.12707,5.12707,0,0,1-2.06712,9.3303l-.10452.01614c-9.55573,13.64366,21.07745,49.15469,28.74517,41.18138a125.11185,125.11185,0,0,0-6.73449,31.69282,118.66326,118.66326,0,0,0,.08608,19.15987l-.03231-.22593c-1.70368-13.88233-30.93134-34.52259-39.46631-32.80332-4.91675.99042-9.75953.76526-9.01293,5.72484q.01788.11875.03635.2375a34.44529,34.44529,0,0,1,3.862,1.86106q1.07082.60423,2.09639,1.28237a5.12713,5.12713,0,0,1-2.06713,9.33039l-.10463.01606c-.07528.01079-.13987.02157-.21507.03237-4.34967,14.96631,27.90735,39.12,47.5177,31.4346l.0108,0a125.07594,125.07594,0,0,0,8.402,24.52806h30.01454c.10765-.3335.20443-.67779.30129-1.01129a34.10189,34.10189,0,0,1-8.3052-.49477c2.22693-2.73257,4.45377-5.48664,6.6807-8.21913a1.86617,1.86617,0,0,0,.13986-.16135c1.12956-1.39849,2.26992-2.78627,3.39948-4.18476l.00061-.00173a49.95245,49.95245,0,0,0-1.46367-12.725Zm-34.37066-67.613.0158-.02133-.0158.04282Zm-6.64833,59.93237-.25821-.58084c.01079-.41957.01079-.83915,0-1.26942,0-.11845-.0215-.23673-.0215-.35509.09678.74228.18285,1.48465.29042,2.22693Z" transform="translate(-167.66498 -107.46078)" fill="#2f2e41"/></svg>    
+                        </div>
+                        <h3 class="services__title">Web Developer</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Web Developer</h3>
+                                <p class="services__modal-description">
+                                    Bridging functionality and aesthetics, I craft responsive and scalable web applications with a strong foundation in both front-end and back-end technologies.
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Engineered responsive websites with HTML5, CSS3, and JavaScript frameworks</p>
                                     </li>
                                     <li class="services__modal-item">
                                         <i class='bx bx-check services__modal-icon' ></i>
-                                        <p class="services__modal-info">RNN, CNN, SignalProcessing</p>
+                                        <p class="services__modal-info">Developed RESTful APIs for seamless front-end to back-end integrationApi</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Built dynamic single-page applications using React</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">Writing server side of the applications with laravel (PHP) and django (Python)</p>
                                     </li>
                                 </ul>
                             </div>
@@ -373,7 +369,131 @@
                     </div>
                 </div>
             </section>
-    
+    <!--=============== SKILLS ===============-->
+    <section class="skills section" id="skills">
+        <span class="section__subtitle">My abilities</span>
+        <h2 class="section__title">My Skills</h2>
+        <div class="skills__container container grid">
+            <div class="skills__content">
+                <h3 class="skills__title">Data Analysis</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Data Clearning</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Data Visualization</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Dashboar (BI)</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check'></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Statistical Analysis</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Data Governance</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Data Mining</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills__content">
+                <h3 class="skills__title">Machine Learning</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Algorithm Development</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Deep Learning (Tensorflow)</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Natural Language Processing</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check'></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Computer Vision</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Feature Engineering</h3>
+                                <span class="skills__level">Intermadiate</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <i class='bx bxs-badge-check' ></i>
+                            
+                            <div>
+                                <h3 class="skills__name">Generative Adversarial Networks</h3>
+                                <span class="skills__level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
             <!--=============== WORK ===============-->
             <section class="work section" id="work">
                 <span class="section__subtitle">My Portfolio</span>
@@ -382,38 +502,48 @@
                 <div class="work__filters">
                     <span class="work__item mixitup-control-active active-work" data-filter="all">All</span>
                     
-                        <span class="work__item" data-filter=".web">BI</span>
+                        <span class="work__item" data-filter=".bi">BI</span>
                     
                         <span class="work__item" data-filter=".ml">Machine Learning</span>
                     
-                        <span class="work__item" data-filter=".dl">Deep Learning</span>
+                        <span class="work__item" data-filter=".ds">Data Science</span>
                     
                 </div>
     
                 <div class="work__container container grid" id="MixItUp41FB2B" style="">
                     
-                        <div class="work__card mix web" style="">
-                            <div class="work__img">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 942.54724 631.43903" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M879.59026,413.72015l2.79791-22.42655a30.28454,30.28454,0,0,1,60.10315,7.4984l-2.79791,22.42654a4.07267,4.07267,0,0,1-4.5404,3.53316l-52.02959-6.49115A4.07266,4.07266,0,0,1,879.59026,413.72015Z" transform="translate(-128.72638 -134.28048)" fill="#2f2e41"/><circle cx="775.78648" cy="263.92678" r="22.20356" fill="#ffb8b8"/><path d="M875.05486,392.20076a23.98352,23.98352,0,0,1,26.73792-20.80636l4.48553.55961a23.98334,23.98334,0,0,1,20.80614,26.73789l-.056.44853-9.47894-1.18258-2.10358-9.45631L913.67,397.47385l-4.8988-.61117-1.06132-4.77116-.89618,4.52695-31.81482-3.96918Z" transform="translate(-128.72638 -134.28048)" fill="#2f2e41"/><path d="M795.91611,477.41149a10.22784,10.22784,0,0,0,15.28426,3.51477L831.3673,492.74l10.16823-10.50441-28.71392-16.28326a10.28328,10.28328,0,0,0-16.9055,11.45917Z" transform="translate(-128.72638 -134.28048)" fill="#ffb8b8"/><path d="M862.01251,498.63944c-14.87549,0-41.052-6.65918-42.50146-7.03125l-.45777-.11719,4.11988-20.85889,39.98193,7.897,21.7207-30.58692,24.93726-2.53515-.69605.916c-.32422.42676-32.46972,42.74317-37.47241,49.8418C870.38214,497.95585,866.77618,498.63944,862.01251,498.63944Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M866.00055,576.92752l-.59522-.28417c-.12671-.06055-12.76513-6.208-19.31128-18.209-6.51489-11.94434,23.98316-62.6123,26.1167-66.12793l.031-16.09082L883.213,446.59452l13.9917-7.90821L885.19171,466.7161Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><polygon points="723.257 615.591 709.885 615.59 703.523 564.011 723.259 564.012 723.257 615.591" fill="#ffb8b8"/><path d="M855.39347,762.83333l-43.11785-.00159v-.54537A16.78359,16.78359,0,0,1,829.05829,745.504h.00107l26.33491.00107Z" transform="translate(-128.72638 -134.28048)" fill="#2f2e41"/><polygon points="866.891 603.872 854.184 608.035 832.077 561.002 850.832 554.857 866.891 603.872" fill="#ffb8b8"/><path d="M1002.89464,749.40842,961.92,762.83333l-.16982-.51825a16.78358,16.78358,0,0,1,10.72241-21.174l.001-.00033,25.02593-8.1994Z" transform="translate(-128.72638 -134.28048)" fill="#2f2e41"/><path d="M969.72638,729.71952l-38.1205-63.64087L899.4256,598.08573l-28.95826,60.06054-11.50366,77.78809-40.343.56055.15893-.63086L880.51715,490.5535l48.352,7.22363-2.20093,31.916,1.31079,1.86426c10.92261,15.5166,22.21607,31.55957,15.73877,48.85351l18.36231,54.52246,40.64624,90.78614Z" transform="translate(-128.72638 -134.28048)" fill="#2f2e41"/><path d="M882.72638,543.71952c-7.00635,0-15-8-10.853-21.65821l-.26855-.19433,9.96069-44.00781c-8.69263-12.43165,2.76807-22.69141,3.842-23.60791l5.4707-9.84717,24.1377-15.30811L927.22882,530.5701l-.18066.17285C918.2276,539.18241,888.60358,543.71952,882.72638,543.71952Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><path d="M932.15948,566.617a11.88134,11.88134,0,0,1-2.85131-.30176c-.93873-.23535-2.4585-1.43066-4.80689-9.07715-9.33618-30.39746-20.35913-121.86035-12.35083-130.81055l.18335-.20507,13.14893,2.1914c1.093-.80664,6.82861-4.81054,12.12133-4.11425a8.033,8.033,0,0,1,5.49659,3.249l.09057.11865,4.189,59.59424,15.34619,70.13086-.36792.167C961.46564,557.96561,942.303,566.617,932.15948,566.617Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M923.31655,543.32446a10.22788,10.22788,0,0,0,9.66238-12.35317l19.24856-13.25752-5.20361-13.66228-26.91975,19.104a10.28328,10.28328,0,0,0,3.21242,20.169Z" transform="translate(-128.72638 -134.28048)" fill="#ffb8b8"/><path d="M945.876,528.3367l-17.14551-12.57324,24.10083-32.86426L934.33624,450.261l8.27466-23.66113.53467,1.019c.249.47461,24.94824,47.52686,29.25683,55.06738,4.48267,7.84375-24.97,43.76075-26.22583,45.28516Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M560.20614,676.255l-14.5923-6.1443-10.01026-73.15138H402.299L391.4486,669.81186l-13.05511,6.52746a3.10016,3.10016,0,0,0,1.38657,5.873H559.00349A3.1,3.1,0,0,0,560.20614,676.255Z" transform="translate(-128.72638 -134.28048)" fill="#e6e6e6"/><path d="M797.09757,606.69181H142.26837a12.97344,12.97344,0,0,1-12.9443-12.97332V501.379h680.7178v92.33952A12.97357,12.97357,0,0,1,797.09757,606.69181Z" transform="translate(-128.72638 -134.28048)" fill="#ccc"/><path d="M810.72638,545.02084h-682V149.91957A15.65719,15.65719,0,0,1,144.366,134.28048H795.08655a15.65736,15.65736,0,0,1,15.63983,15.63909Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M769.99322,516.34435H169.45954a12.07024,12.07024,0,0,1-12.057-12.05667v-329.274a12.07088,12.07088,0,0,1,12.057-12.05741H769.99322a12.07088,12.07088,0,0,1,12.057,12.05741v329.274A12.07024,12.07024,0,0,1,769.99322,516.34435Z" transform="translate(-128.72638 -134.28048)" fill="#fff"/><path d="M638.14638,682.97542l-337.44822,0a1.56681,1.56681,0,0,1-1.53908-1.13363,1.52911,1.52911,0,0,1,1.47725-1.91893l337.385,0a1.61535,1.61535,0,0,1,1.61617,1.19368A1.52819,1.52819,0,0,1,638.14638,682.97542Z" transform="translate(-128.72638 -134.28048)" fill="#ccc"/><rect x="489.85973" y="81.90943" width="144.99594" height="110.7733" fill="#f2f2f2"/><rect x="497.0645" y="87.41369" width="130.58641" height="99.76477" fill="#fff"/><path d="M693.37738,295.69477q.02592.00028.05185-.00109a34.81675,34.81675,0,0,0,.779-69.48892.79424.79424,0,0,0-.60112.20836.78592.78592,0,0,0-.25678.57553l-.7612,67.902a.79707.79707,0,0,0,.78826.80412Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M666.072,237.43291a1.02524,1.02524,0,0,1,.71962.30735l23.37584,23.90588a1.01418,1.01418,0,0,1,.29094.72511l-.36424,32.49143a1.01059,1.01059,0,0,1-.33018.73985,1.026,1.026,0,0,1-.77126.26782,35.04446,35.04446,0,0,1-23.69951-58.09062,1.02636,1.02636,0,0,1,.74091-.34658Q666.05306,237.4327,666.072,237.43291Z" transform="translate(-128.72638 -134.28048)" fill="#e6e6e6"/><path d="M689.84193,225.9272a1.02931,1.02931,0,0,1,.69948.28585,1.01135,1.01135,0,0,1,.31394.74786l-.32864,29.31578a1.02077,1.02077,0,0,1-1.75041.70223L668.378,236.11808a1.02291,1.02291,0,0,1,.05493-1.48163,35.11806,35.11806,0,0,1,21.34564-8.708C689.79961,225.92739,689.82088,225.927,689.84193,225.9272Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><path d="M679.33353,309.77539a6.25343,6.25343,0,1,1-6.18294-6.32313A6.26054,6.26054,0,0,1,679.33353,309.77539Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><path d="M697.19935,309.97567a6.25343,6.25343,0,1,1-6.18294-6.32313A6.26056,6.26056,0,0,1,697.19935,309.97567Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M715.06516,310.176a6.25343,6.25343,0,1,1-6.18294-6.32314A6.26054,6.26054,0,0,1,715.06516,310.176Z" transform="translate(-128.72638 -134.28048)" fill="#e6e6e6"/><rect x="488.33346" y="210.11637" width="144.99594" height="110.7733" fill="#f2f2f2"/><rect x="495.53823" y="215.62063" width="130.58641" height="99.76477" fill="#fff"/><circle cx="517.69473" cy="242.98812" r="5.42203" fill="#3f3d56"/><path d="M733.53881,373.0493a3.67713,3.67713,0,1,1,0,7.35425H676.51323a3.67712,3.67712,0,1,1,0-7.35425h57.02558m0-.9006H676.51323a4.57773,4.57773,0,1,0,0,9.15545h57.02558a4.57773,4.57773,0,1,0,0-9.15545Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M711.03754,381.30414h-42.9283a4.57772,4.57772,0,1,1,0-9.15544h42.9283a4.57772,4.57772,0,0,1,0,9.15544Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><circle cx="517.69473" cy="265.50302" r="5.42203" fill="#3f3d56"/><path d="M733.53881,395.5642a3.67713,3.67713,0,1,1,0,7.35425H676.51323a3.67712,3.67712,0,1,1,0-7.35425h57.02558m0-.9006H676.51323a4.57772,4.57772,0,1,0,0,9.15545h57.02558a4.57772,4.57772,0,1,0,0-9.15545Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M727.24826,403.819h-59.139a4.57772,4.57772,0,1,1,0-9.15544h59.139a4.57772,4.57772,0,0,1,0,9.15544Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><circle cx="517.69473" cy="288.01792" r="5.42203" fill="#3f3d56"/><path d="M733.53881,418.0791a3.67713,3.67713,0,1,1,0,7.35425H676.51323a3.67712,3.67712,0,1,1,0-7.35425h57.02558m0-.9006H676.51323a4.57772,4.57772,0,1,0,0,9.15545h57.02558a4.57772,4.57772,0,1,0,0-9.15545Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M692.125,426.33393H668.10924a4.57772,4.57772,0,1,1,0-9.15543H692.125a4.57772,4.57772,0,0,1,0,9.15543Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><rect x="51.18842" y="101.50782" width="405.09331" height="207.61032" fill="#f2f2f2"/><rect x="64.69153" y="111.82386" width="378.08709" height="186.97824" fill="#fff"/><path d="M524.61425,404.55724H248.996a.8626.8626,0,0,1-.86256-.86256V271.59086a.86256.86256,0,1,1,1.72512,0V402.83212H524.61425a.86256.86256,0,0,1,0,1.72512Z" transform="translate(-128.72638 -134.28048)" fill="#3f3d56"/><path d="M307.88363,395.06909H282.81508a2.56336,2.56336,0,0,1-2.56051-2.5603V357.95166a2.56337,2.56337,0,0,1,2.56051-2.5603h25.06855a2.56337,2.56337,0,0,1,2.56051,2.5603v34.55713A2.56336,2.56336,0,0,1,307.88363,395.06909Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><path d="M353.59927,395.06909H328.53072a2.56336,2.56336,0,0,1-2.56051-2.5603V325.17441a2.56336,2.56336,0,0,1,2.56051-2.5603h25.06855a2.56336,2.56336,0,0,1,2.56051,2.5603v67.33438A2.56336,2.56336,0,0,1,353.59927,395.06909Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><path d="M399.31491,395.06909H374.24636a2.56337,2.56337,0,0,1-2.56051-2.5603V357.95166a2.56337,2.56337,0,0,1,2.56051-2.5603h25.06855a2.56337,2.56337,0,0,1,2.56052,2.5603v34.55713A2.56337,2.56337,0,0,1,399.31491,395.06909Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><path d="M445.03056,395.06909H419.962a2.50734,2.50734,0,0,1-2.56052-2.44431V312.12a2.50734,2.50734,0,0,1,2.56052-2.44431h25.06855a2.50734,2.50734,0,0,1,2.56051,2.44431v80.50475A2.50734,2.50734,0,0,1,445.03056,395.06909Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><path d="M490.7462,395.06909H465.67765a2.56336,2.56336,0,0,1-2.56051-2.5603V288.94692a2.56336,2.56336,0,0,1,2.56051-2.5603H490.7462a2.56336,2.56336,0,0,1,2.56051,2.5603V392.50879A2.56336,2.56336,0,0,1,490.7462,395.06909Z" transform="translate(-128.72638 -134.28048)" fill="#61dbcf"/><circle cx="166.62298" cy="205.58481" r="5.17536" fill="#3f3d56"/><circle cx="212.33862" cy="171.945" r="5.17536" fill="#3f3d56"/><circle cx="258.05426" cy="205.58481" r="5.17536" fill="#3f3d56"/><circle cx="303.7699" cy="155.55637" r="5.17536" fill="#3f3d56"/><circle cx="349.48555" cy="136.58007" r="5.17536" fill="#3f3d56"/><polygon points="258.163 206.744 212.339 172.421 167.14 206.275 166.106 204.895 212.339 170.265 257.945 204.425 303.266 154.83 303.447 154.756 349.163 136.337 349.808 137.937 304.274 156.283 258.163 206.744" fill="#3f3d56"/><path d="M1070.27362,765.71952h-381a1,1,0,0,1,0-2h381a1,1,0,0,1,0,2Z" transform="translate(-128.72638 -134.28048)" fill="#ccc"/></svg>
-                            </div>
-                            <h3 class="work__title">Blog - Laravel</h3>
-                            <a href="https://github.com/AmirmahdiAbtl/larablog" class="work__button">
-                                Github <i class="bx bx-right-arrow-alt work__icon"></i>
-                            </a>
-                        
-                        </div>
+                    <div id="workCard1" class="work__card mix bi">
+                        <img id="workImg1" class="work__img" src="img/Bi dashboard.png" alt="">
+                        <h3 class="work__title">Power BI Dashboard</h3>
+                        <p>Salary by Job Title and Country</p>
+                        <a download="" href="files/file.pdf" class="work__button">
+                            PDF Sample <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                    </div>
                     
-                        <div class="work__card mix dl" style="">
-                            <img src="poster/Screenshot_2023-03-05_160053.png" alt="" class="work__img">
-                            <h3 class="work__title">Data Clearning</h3>
-                            <a href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
-                                Colab <i class="bx bx-right-arrow-alt work__icon"></i>
-                            </a>
+                    <div id="workCard2" class="work__card mix ds">
+                        <img id="workImg2" class="work__img" src="poster/mlp11.webp" alt="">
+                        <h3 class="work__title">Model Training, EDA, Tableau<br> Scratch Implementation </h3>
+                        <div>
+                        <a style="display: inline;" href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                            GitHub <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                        <a style="display: inline; padding: 0 0.5rem;" href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                            Colab <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                        <a style="display: inline;" href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                            Kaggle <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
                         </div>
+                    </div>
+                    <div id="workCard3" class="work__card mix dl">
+                        <img id="workImg3" class="work__img" src="poster/Screenshot_2023-03-05_160053.png" alt="">
+                        <h3 class="work__title">Data Clearning</h3>
+                        <a href="https://colab.research.google.com/drive/1AWbuOjcd186mQvIx65fifKkyHDs1zGPZ?usp=sharing" class="work__button">
+                            Colab <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+                    </div>  
                     
-                </div>
-                <div class="work__button-more">
-                    <a href="/postexplorer/"><button class="button">More Projects</button></a>
                 </div>
             </section>
             
@@ -478,7 +608,7 @@
                         </div>
                         <div class="testimonial__card swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 340.75px; margin-right: 24px;">
                             <img src="img/kaggle.png" alt="" class="testimonial__img" style="width: 45%;">
-                            <h3 class="testimonial__name">Data Science Specialization</h3>
+                            <h3 class="testimonial__name">Kaggle Courses</h3>
                             <p class="testimonial__description">
                                 Coursera - May 2022
                             </p>
@@ -497,17 +627,17 @@
                                 Detail
                             </button>
                         </div>
-                        <div class="testimonial__card swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 340.75px; margin-right: 24px;">
+                        <!-- <div class="testimonial__card swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 340.75px; margin-right: 24px;">
                             <img src="img/deep.png" alt="" class="testimonial__img">
                             <img src="https://media.licdn.com/dms/image/C560BAQEHKffoI8RwIQ/company-logo_100_100/0/1612806383093?e=1688601600&amp;v=beta&amp;t=YnwWzF2qZbdXs7TCxW0_y_Bzrh_HRsYJ4YToyhcmScg" alt="" class="testimonial__img">
-                            <h3 class="testimonial__name">Data Science Specialization</h3>
+                            <h3 class="testimonial__name">University Courses</h3>
                             <p class="testimonial__description">
                                 Coursera - May 2022
                             </p>
                             <button class="pop_up_btn" onclick="openPopup_uni()">
                                 Detail
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
                         <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
@@ -529,18 +659,24 @@
                     <ul class="services__modal-list">
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Supervised Machine Learning: Regression and Classification</p>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/ZTMQWDPWDBDK">Certification</a>
+                            <p class="services__modal-info">Supervised Machine Learning: Regression and Classification
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/ZTMQWDPWDBDK">Certification</a>
+                            </p>
+                            
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Advanced Learning Algorithms</p>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/F86VQRJJRL4W">Certification</a>
+                            <p class="services__modal-info">Advanced Learning Algorithms
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/F86VQRJJRL4W">Certification</a>
+                            </p>
+                            
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Unsupervised Learning, Recommenders, Reinforcement Learning</p>
-                            <a href="https://www.coursera.org/account/accomplishments/certificate/TJUV87K3RD5P">Certification</a>
+                            <p class="services__modal-info">Unsupervised Learning, Recommenders, Reinforcement Learning
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/TJUV87K3RD5P">Certification</a>
+                            </p>
+                            
                         </li>
                     </ul>
                 </div>
@@ -550,24 +686,39 @@
                     <span class="close-btn services__modal-close" onclick="closePopup_dl()">&times;</span>
                     <h3 class="services__modal-title">Deep Learning Specialization</h3>
                     <p class="services__modal-description">
-                        I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
+                        Main Course Link: <a href="https://www.coursera.org/learn/neural-networks-deep-learning" target="_blank">Deep Learning Specialization</a>
                     </p>
                     <ul class="services__modal-list">
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Designing some landing pages</p>
+                            <p class="services__modal-info">Neural Networks and Deep Learning
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/SAHL65X56V7B">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
+                            <p class="services__modal-info">Improving Deep Neural Networks: Hyperparameter
+                                Tuning, Regularization and Optimization                                
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/QW5RVTVXLEBU">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating jS, Jquery plugin</p>
+                            <p class="services__modal-info">Structuring Machine Learning Projects
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/VDBS2XDFS65N">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Using Laravel Api for React Website</p>
+                            <p class="services__modal-info">Convolutional Neural Networks
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/C7XWK7PZMG8S">Certification</a>
+                            </p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class="fa-solid fa-xmark services__modal-icon"></i>
+                            <p class="services__modal-info">Sequence Models (Completed, but not certified yet)
+                                <a href="https://www.coursera.org/learn/nlp-sequence-models/">Course Link</a>
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -577,24 +728,29 @@
                     <span class="close-btn services__modal-close" onclick="closePopup_gan()">&times;</span>
                     <h3 class="services__modal-title">GAN's Specialization</h3>
                     <p class="services__modal-description">
-                        I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
+                        Main Course Link: <a href="https://www.coursera.org/specializations/generative-adversarial-networks-gans" target="_blank">GAN's Specialization</a>
+                    </p>
+                    <p class="services__modal-description">
+                        Specialization Certifiation: <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/2H92MG5H9SGY" target="_blank">Link</a>
                     </p>
                     <ul class="services__modal-list">
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Designing some landing pages</p>
+                            <p class="services__modal-info">Build Basic Generative Adversarial Networks (GANs)
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/HFUDWLHYBANJ">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
+                            <p class="services__modal-info">Build Better Generative Adversarial Networks (GANs)
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/H34VNHJLFFYR">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating jS, Jquery plugin</p>
-                        </li>
-                        <li class="services__modal-item">
-                            <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Using Laravel Api for React Website</p>
+                            <p class="services__modal-info">Apply Generative Adversarial Networks (GANs)
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/277JM3L2QVF9">Certification</a>
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -604,25 +760,52 @@
                     <span class="close-btn services__modal-close" onclick="closePopup_ds()">&times;</span>
                     <h3 class="services__modal-title">Data Science Specialization</h3>
                     <p class="services__modal-description">
-                        I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
+                        Main Course Link: <a href="https://www.coursera.org/professional-certificates/ibm-data-science" target="_blank">IBM Data Science Professional Certificate</a>
                     </p>
                     <ul class="services__modal-list">
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Designing some landing pages</p>
+                            <p class="services__modal-info">What is Data Science?
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/DVQDED6J2NMQ">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
+                            <p class="services__modal-info">Tools for Data Science
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/FRWLTGWNYRUY">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating jS, Jquery plugin</p>
+                            <p class="services__modal-info">Data Science Methodology
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/AC7YQCXWLPZ7">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Using Laravel Api for React Website</p>
+                            <p class="services__modal-info">Python for Data Science, AI & Development
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/A52RM9WYVBVN">Certification</a>
+                            </p>
                         </li>
+                        <li class="services__modal-item">
+                            <i class="bx bx-check services__modal-icon"></i>
+                            <p class="services__modal-info">Python Project for Data Science
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/BTLV8TCCSKEE">Certification</a>
+                            </p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class="fa-solid fa-xmark services__modal-icon"></i>
+                            <p class="services__modal-info">Databases and SQL for Data Science with Python (in progress)
+                                <a href="https://www.coursera.org/learn/sql-data-science">Course Website</a>
+                            </p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class="fa-solid fa-xmark services__modal-icon"></i>
+                            <p class="services__modal-info">Data Visualization with Python (completed, but not certified yet)
+                                <a href="https://www.coursera.org/learn/python-for-data-visualization">Course Website</a>
+                            </p>
+                        </li>
+                        
                     </ul>
                 </div>
               </div>
@@ -631,24 +814,32 @@
                     <span class="close-btn services__modal-close" onclick="closePopup_nlp()">&times;</span>
                     <h3 class="services__modal-title">Natural Language Processing Specialization</h3>
                     <p class="services__modal-description">
-                        I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
+                        Main Course Link: <a href="https://www.coursera.org/specializations/natural-language-processing" target="_blank">NLP Specialization</a>
                     </p>
                     <ul class="services__modal-list">
                         <li class="services__modal-item">
-                            <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Designing some landing pages</p>
+                            <i class="fa-solid fa-xmark services__modal-icon"></i>
+                            <p class="services__modal-info">Natural Language Processing with Classification and Vector Spaces(in progress)
+                                <a href="https://www.coursera.org/learn/classification-vector-spaces-in-nlp/">Course Website</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
-                            <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
+                            <i class="fa-solid fa-xmark services__modal-icon"></i>
+                            <p class="services__modal-info">Natural Language Processing with Probabilistic Models (in progress)
+                                <a href="https://www.coursera.org/learn/probabilistic-models-in-nlp">Course Website</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
-                            <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating jS, Jquery plugin</p>
+                            <i class="fa-solid fa-xmark services__modal-icon"></i>
+                            <p class="services__modal-info">Natural Language Processing with Sequence Models (in progress)
+                                <a href="https://www.coursera.org/learn/sequence-models-in-nlp">Course Website</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
-                            <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Using Laravel Api for React Website</p>
+                            <i class="fa-solid fa-xmark services__modal-icon"></i>
+                            <p class="services__modal-info">Natural Language Processing with Attention Models (in progress)
+                                <a href="https://www.coursera.org/learn/attention-models-in-nlp">Course Website</a>
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -658,24 +849,32 @@
                     <span class="close-btn services__modal-close" onclick="closePopup_kaggle()">&times;</span>
                     <h3 class="services__modal-title">Kaggle Courses</h3>
                     <p class="services__modal-description">
-                        I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
+                        Main Course Link: <a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn</a>
                     </p>
                     <ul class="services__modal-list">
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Designing some landing pages</p>
+                            <p class="services__modal-info">Intro to Machine Learning
+                                <a href="https://www.kaggle.com/learn/certification/amirmahdiabbootalebi/intro-to-machine-learning">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
+                            <p class="services__modal-info">Pandas
+                                <a href="https://www.kaggle.com/learn/certification/amirmahdiabbootalebi/pandas">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating jS, Jquery plugin</p>
+                            <p class="services__modal-info">Computer Vision
+                                <a href="https://www.kaggle.com/learn/certification/amirmahdiabbootalebi/computer-vision">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Using Laravel Api for React Website</p>
+                            <p class="services__modal-info">Data Clearning
+                                <a href="https://www.kaggle.com/learn/certification/amirmahdiabbootalebi/data-cleaning">Certification</a>
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -684,30 +883,23 @@
                 <div class="services__modal-content popup-content" id="popup">
                     <span class="close-btn services__modal-close" onclick="closePopup_coursera()">&times;</span>
                     <h3 class="services__modal-title">Coursera Courses</h3>
-                    <p class="services__modal-description">
-                        I've created some common projects with CSS, HTML, JS and I had worked with ReactJS a little bit
-                    </p>
                     <ul class="services__modal-list">
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Designing some landing pages</p>
+                            <p class="services__modal-info">Django Web Framework
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/AZLXRG56K6Z4">Certification</a>
+                            </p>
                         </li>
                         <li class="services__modal-item">
                             <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating some tab pages for useing Laravel Api</p>
-                        </li>
-                        <li class="services__modal-item">
-                            <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Creating jS, Jquery plugin</p>
-                        </li>
-                        <li class="services__modal-item">
-                            <i class="bx bx-check services__modal-icon"></i>
-                            <p class="services__modal-info">Using Laravel Api for React Website</p>
+                            <p class="services__modal-info">Machine Learning Foundations: A Case Study Approach
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/BYTZMYD9RLUG">Certification</a>
+                            </p>
                         </li>
                     </ul>
                 </div>
               </div>
-              <div class="popup-overlay" id="popup_uni">
+              <!-- <div class="popup-overlay" id="popup_uni">
                 <div class="services__modal-content popup-content" id="popup">
                     <span class="close-btn services__modal-close" onclick="closePopup_uni()">&times;</span>
                     <h3 class="services__modal-title">University Courses</h3>
@@ -733,7 +925,7 @@
                         </li>
                     </ul>
                 </div>
-              </div>
+              </div> -->
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
                 <span class="section__subtitle">Get in touch</span>
@@ -755,8 +947,8 @@
                             <div class="contact__card">
                                 <i class='bx bxl-whatsapp contact__card-icon' ></i>
                                 <h3 class="contact__card-title">whatsapp</h3>
-                                <span class="contact__card-data">+98935-334-5705</span>
-                                <a href="https://wa.me/989353345705" target="_blank" class="contact__button">
+                                <span class="contact__card-data">+39351-321-1513</span>
+                                <a href="https://wa.me/393513211513" target="_blank" class="contact__button">
                                     Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
                                 </a>
                             </div>
@@ -821,7 +1013,7 @@
                     <a href="https://www.instagram.com/amirmahdi_abtl/" target="_blank" class="footer__social-link">
                         <i class="bx bxl-instagram"></i>
                     </a>
-                    <a href="https://wa.me/989353345705" target="_blank" class="footer__social-link">
+                    <a href="https://wa.me/393513211513" target="_blank" class="footer__social-link">
                         <i class='bx bxl-whatsapp' ></i>
                     </a>
                 </ul>
@@ -831,6 +1023,38 @@
                 </span>
             </div>
         </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Define the image sequences for each card
+                const imageSequence1 = ['img/Bi dashboard.png', 'img/Bi dashboard2.png', 'img/Bi dashboard3.png', 'img/Bi dashboard4.png'];
+                const imageSequence2 = ['poster/mlp11.webp', 'poster/mlp12.webp'];
+                const imageSequence3 = ['img/Bi dashboard.png', 'img/Bi dashboard2.png', 'img/Bi dashboard3.png', 'img/Bi dashboard4.png'];
+                // Function to change images
+                function changeImageOnHover(cardId, imgId, images) {
+                    let img = document.getElementById(imgId);
+                    let currentIndex = 0;
+                    let interval;
+            
+                    document.getElementById(cardId).addEventListener('mouseenter', function() {
+                        interval = setInterval(() => {
+                            img.src = images[currentIndex];
+                            currentIndex = (currentIndex + 1) % images.length;
+                        }, 2000); // Change image every 1000ms (1 second)
+                    });
+            
+                    document.getElementById(cardId).addEventListener('mouseleave', function() {
+                        clearInterval(interval);
+                        img.src = images[0]; // Reset to the first image
+                    });
+                }
+            
+                // Initialize the hover effect for each card
+                changeImageOnHover('workCard1', 'workImg1', imageSequence1);
+                changeImageOnHover('workCard2', 'workImg2', imageSequence2);
+                changeImageOnHover('workCard3', 'workImg3', imageSequence3);
+            });
+            </script>
+            
         <!--=============== SCROLLREVEAL ===============-->
         <script src="js/scrollreveal.min.js"></script>
 

@@ -837,6 +837,10 @@ body.light-theme{
   .work__filters{
     column-gap: 0.25rem;
   }
+  .popup-content{
+    width: 80%;
+    left: 45%;
+  }
 }
 
 /* For medium devices */
@@ -861,7 +865,7 @@ body.light-theme{
     padding: 2rem 4rem;
   }
   .services__container{
-    grid-template-columns: repeat(2, 260px);
+    grid-template-columns: repeat(2, 350px);
     justify-content: center;
   }
   .services__modal-content{
@@ -885,6 +889,10 @@ body.light-theme{
     width: 360px;
     margin: 0 auto;
   }
+  /* .popup-content{
+    width: 80%;
+    left: 45%;
+  } */
 }
 @media screen and (min-width: 767px){
   .work__container{
@@ -956,15 +964,15 @@ body.light-theme{
     padding: 1rem 1.25rem;
   }
   .about__description{
-    padding: 0 4rem 0 0;
+    padding: 0 0 0 0;
     margin-bottom: 2.5rem;
   }
   .skills__container{
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 500px);
     column-gap: 3rem;
   }
   .services__container{
-    grid-template-columns: repeat(3, 256px);
+    grid-template-columns: repeat(3, 320px);
     column-gap: 3rem;
   }
   .services__card{
@@ -1014,7 +1022,6 @@ body.light-theme{
 
 .popup-content {
   margin: 20px;
-  text-align: center;
 }
 
 .close-popup-btn {
@@ -1051,7 +1058,7 @@ body.light-theme{
 .popup-content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
   /* background-color: #fff; */
   padding: 20px;
@@ -1077,4 +1084,10 @@ button {
   background-color: transparent;
    color : var(--first-color);
    font-size: 14px;
+}
+.exp__container{
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
 }
