@@ -185,9 +185,9 @@ function closePopup_coursera() {
     document.getElementById("popup_coursera").style.display = "none";
 }
 
-function openPopup_uni() {
-    document.getElementById("popup_uni").style.display = "block";
+function openPopup_tensorflow() {
+    document.getElementById("popup_tensorflow").style.display = "block";
 }
-function closePopup_uni() {
-    document.getElementById("popup_uni").style.display = "none";
+function closePopup_tensorflow() {
+    document.getElementById("popup_tensorflow").style.display = "none";
 }
