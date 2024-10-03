@@ -134,7 +134,12 @@ const sr = ScrollReveal({
 sr.reveal(".home__data")
 sr.reveal(".home__handle", {delay: 700})
 sr.reveal(".home__social .home__scroll", {delay: 900, origin: "bottom"})
-
+function openPopup_dc() {
+    document.getElementById("popup_dc").style.display = "block";
+}
+function closePopup_dc() {
+    document.getElementById("popup_dc").style.display = "none";
+}
 
 function openPopup_ml() {
     document.getElementById("popup_ml").style.display = "block";
