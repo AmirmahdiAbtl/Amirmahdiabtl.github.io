@@ -1,11 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Project page
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <title>Amirmahdi</title>
+    <body>
+        <!--=============== HEADER ===============-->
+        
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="project.html" class="nav__logo">Amirmahdi</a>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user' ></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#experience" class="nav__link">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book' ></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bx-briefcase' ></i>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-detail'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Change Theme Color -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Amirmahdi Aboutalebi</h1>
+                        <h3 class="home__education">Data Scientist & Machine Learning Developer</h3>
+                        
+                    </div>
+                </div>
+            </section>
+           <!--=============== WORK ===============-->
+           <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item mixitup-control-active active-work" data-filter="all">All</span>
+                
+                    <span class="work__item" data-filter=".bi">BI</span>
+                
+                    <span class="work__item" data-filter=".ml">Machine Learning</span>
+                
+                    <span class="work__item" data-filter=".ds">Data Science</span>
+                
+            </div>
+
+            <div class="work__container container grid" id="MixItUp41FB2B" style="">
+                
+                <div id="workCard1" class="work__card mix bi">
+                    <img id="workImg1" class="work__img" src="img/Bi dashboard.png" alt="">
+                    <h3 class="work__title">Power BI Dashboard</h3>
+                    <p>Salary by Job Title and Country</p>
+                    <a download="" href="files/file.pdf" class="work__button">
+                        PDF Sample <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>
+                
+                <div id="workCard2" class="work__card mix ml">
+                    <img id="workImg2" class="work__img" src="poster/mlp11.webp" alt="">
+                    <h3 class="work__title">Model Training, EDA, Tableau<br> Scratch Implementation </h3>
+                    <p>Salary Prediction (Regression)</p>
+                    <div>
+                    <a style="display: inline;" href="https://github.com/AmirmahdiAbtl/Machine-Learning-Salary-Data-Based-on-Country/" class="work__button">
+                        GitHub <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                    <a style="display: inline; padding: 0 0.5rem;" href="https://colab.research.google.com/drive/1mVqH1VBxk9l5MzJLjwQ8m6CwF6QqRHXf?usp=sharing" class="work__button">
+                        Colab <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                    <a style="display: inline;" href="https://www.kaggle.com/code/amirmahdiabbootalebi/with-this-notebook-you-don-t-need-any-courses" class="work__button">
+                        Kaggle <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                    </div>
+                </div>
+                <div class="work__card mix ds">
+                    <img style="height: 200px; width: 100%;" class="work__img" src="poster/socerdb.webp" alt="">
+                    <h3 class="work__title">NoSQL Prject</h3>
+                    <p>MongoDB & Neo4j <br>(creating, querying, E-D diagrams)</p>
+                    <a href="https://github.com/AmirmahdiAbtl/NoSQL-Project-MongoDB-Neo4j-/" class="work__button">
+                        GitHub <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>  
+                <div id="workCard4" class="work__card mix ml">
+                    <img id="workImg4" style="height: 200px; width: 100%;" class="work__img" src="poster/num1.webp" alt="">
+                    <h3 class="work__title">Conditional Generative Artificial<br/> Networks</h3>
+                    <p>Generating Persian Hand written<br> Digits</p>
+                    <a style="display: inline;" href="https://github.com/AmirmahdiAbtl/Persian-Handwritten-Digit-Generation-using-Conditional-GANs" class="work__button">
+                        GitHub <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                    <a style="display: inline;" href="https://www.kaggle.com/code/amirmahdiabbootalebi/persian-handwritten-digit-gans-generator" class="work__button">
+                        Kaggle <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>  
+                <div class="work__card mix ds">
+                    <img style="height: 200px; width: 100%;" class="work__img" src="poster/heart.webp" alt="">
+                    <h3 class="work__title">Stroke Prediction</h3>
+                    <p>Machine Learning Dashboard BI<br>Data Analysis and visualization</p>
+                    <a style="display: inline;" href="https://github.com/AmirmahdiAbtl/Stroke-Prediction" class="work__button">
+                        GitHub <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                    <a style="display: inline; padding: 0 0.5rem;" href="https://colab.research.google.com/drive/1id_i3CAa-NHk0bN8SIHPh4LNUFx1feWQ?usp=sharing" class="work__button">
+                        Colab <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                    <a style="display: inline;" href="https://www.kaggle.com/code/amirmahdiabbootalebi/hyper-tuning-eda-waffle-story-telling" class="work__button">
+                        Kaggle <i class="bx bx-right-arrow-alt work__icon"></i>
+                    </a>
+                </div>  
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Amirmahdi</h1>
+        
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer__link">Work</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="footer__link">Certification</a>
+                    </li>
+                </ul>
+        
+                <ul class="footer__social">
+                    <a href="https://t.me/AmirmahdiAbtl" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-telegram'></i>
+                    </a>
+                    <a href="https://www.instagram.com/amirmahdi_abtl/" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/393513211513" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                </ul>
+        
+                <span class="footer__copy">
+                    &#169; AmirmahdiABTL. All rights reserved
+                </span>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Define the image sequences for each card
+                const imageSequence1 = ['img/Bi dashboard.png', 'img/Bi dashboard2.png', 'img/Bi dashboard3.png', 'img/Bi dashboard4.png'];
+                const imageSequence2 = ['poster/mlp11.webp', 'poster/mlp12.webp'];
+                const imageSequence3 = ['img/Bi dashboard.png', 'img/Bi dashboard2.png', 'img/Bi dashboard3.png', 'img/Bi dashboard4.png'];
+                const imageSequence4 = ['poster/num1.webp', 'poster/num2.webp'];
+                // Function to change images
+                function changeImageOnHover(cardId, imgId, images) {
+                    let img = document.getElementById(imgId);
+                    let currentIndex = 0;
+                    let interval;
+            
+                    document.getElementById(cardId).addEventListener('mouseenter', function() {
+                        interval = setInterval(() => {
+                            img.src = images[currentIndex];
+                            currentIndex = (currentIndex + 1) % images.length;
+                        }, 1000); // Change image every 1000ms (1 second)
+                    });
+            
+                    document.getElementById(cardId).addEventListener('mouseleave', function() {
+                        clearInterval(interval);
+                        img.src = images[0]; // Reset to the first image
+                    });
+                }
+            
+                // Initialize the hover effect for each card
+                changeImageOnHover('workCard1', 'workImg1', imageSequence1);
+                changeImageOnHover('workCard2', 'workImg2', imageSequence2);
+                changeImageOnHover('workCard3', 'workImg3', imageSequence3);
+                changeImageOnHover('workCard4', 'workImg4', imageSequence4);
+            });
+            </script>
+            
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="js/main.js"></script>
+        
+    </body>
 </html>
